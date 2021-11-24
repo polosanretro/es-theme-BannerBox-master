@@ -1,0 +1,362 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<theme defaultView="Colorful + Gamelist (vertically)">
+<formatVersion>7</formatVersion>
+
+
+
+<customView name="Comics" inherits="video">
+
+
+<image name="menu" extra="true">
+<linearSmooth>true</linearSmooth>
+<path>./art/sistemas/comicscrap/_assets/menu.png</path>
+<size>1 1</size>
+<zIndex>100</zIndex>
+</image>
+
+<image name="menu" extra="true" ifSubset="maskColor:tmnt">
+<path>./art/sistemas/comicscrap/_assets/menuTmnt.png</path>
+</image>
+
+<image name="menu" extra="true" ifSubset="maskColor:comix">
+<path>./art/sistemas/comicscrap/_assets/menuComix.png</path>
+</image>
+
+<image name="menu" extra="true" ifSubset="maskColor:themed">
+<path>./art/sistemas/comicscrap/_assets/themedSkins/menu/default.png</path>
+<path>./art/sistemas/comicscrap/_assets/themedSkins/menu/${system.theme}.png</path>
+</image>
+
+<image name="menu" extra="true" ifSubset="maskColor:darkGrey">
+<color>${maskDarkGreyColor}</color>
+</image>
+
+<image name="menu" extra="true" ifSubset="maskColor:oldPaper">
+<color>${maskOldPaperColor}</color>
+</image>
+
+<image name="menu" extra="true" ifSubset="maskColor:papyruss">
+<color>${maskPapyrussColor}</color>
+</image>
+
+<image name="menu" extra="true" ifSubset="maskColor:blue">
+<color>${maskBlueColor}</color>
+</image>
+
+<image name="menu" extra="true" ifSubset="maskColor:green">
+<color>${maskGreenColor}</color>
+</image>
+
+<image name="menuBack" extra="true">
+<linearSmooth>true</linearSmooth>
+<path>./art/sistemas/comicscrap/_assets/menuBack.png</path>
+<size>1 1</size>
+<zIndex>50</zIndex>
+<color>ffffff</color>
+</image>
+
+<textlist name="gamelist">
+<origin>0.5 0.5</origin>
+<pos>0.2526041666666667 0.5550925925925926</pos>
+<size>0.4760416666666667 0.7546296296296296</size>
+<selectorImagePath>./art/sistemas/comicscrap/_assets/selector.png</selectorImagePath>
+<selectedColor>eeeeee</selectedColor>
+<primaryColor>090909</primaryColor>
+<secondaryColor>090909</secondaryColor>
+<!--<selectorColor>33333399</selectorColor>-->
+<selectorColor>ffffff</selectorColor>	  		
+<fontPath>./art/sistemas/comicscrap/_assets/Shaka_Pow.ttf</fontPath>
+<fontSize>0.0335</fontSize>
+<alignment>left</alignment>
+<horizontalMargin>0.025</horizontalMargin>
+<forceUppercase>false</forceUppercase>
+<zIndex>110</zIndex>
+<lines>12</lines>
+        <scrollSound>./_assets/scroll/${x.scroll.sound}.wav</scrollSound>
+        <scrollSound>./_assets/scroll/${x.scroll.game.sound}.wav</scrollSound>
+</textlist>
+
+<image name="logosClassics" extra="true">
+<linearSmooth>false</linearSmooth>
+<path>./art/sistemas/comicscrap/_assets/logosClassic/${system.theme}.png</path>
+<path>./art/sistemas/comicscrap/_assets/logosClassic/${system.theme}.svg</path>
+<path>./art/sistemas/comicscrap/_assets/logosClassic/${system.theme}-${lang}.png</path>
+<path>./art/sistemas/comicscrap/_assets/logosClassic/${system.theme}-${lang}.svg</path>
+<pos>0.91796875 0.0847222222222222</pos>
+<maxSize>0.12 0.08</maxSize>
+<origin>0.5 0.5</origin>
+<zIndex>76</zIndex>
+</image>
+
+<image name="logosClassicsShadow" extra="true">
+<linearSmooth>true</linearSmooth>
+<path>./art/sistemas/comicscrap/_assets/logosClassic/${system.theme}.png</path>
+<path>./art/sistemas/comicscrap/_assets/logosClassic/${system.theme}.svg</path>
+<path>./art/sistemas/comicscrap/_assets/logosClassic/${system.theme}-${lang}.png</path>
+<path>./art/sistemas/comicscrap/_assets/logosClassic/${system.theme}-${lang}.svg</path>
+<pos>0.9185 0.0843</pos>
+<maxSize>0.12 0.08</maxSize>
+<origin>0.5 0.5</origin>
+<color>00000033</color>
+<zIndex>75</zIndex>
+</image>
+
+<image name="md_marquee">
+<linearSmooth>true</linearSmooth>
+<pos>0.67109375 0.0847222222222222</pos>
+<maxSize>0.26 0.11</maxSize>
+<origin>0.5 0.5</origin>
+<zIndex>76</zIndex>
+</image>
+
+<image name="logoComics" extra="true">
+<linearSmooth>true</linearSmooth>
+<path>./art/sistemas/comicscrap/_assets/logos/${system.theme}.png</path>
+<path>./art/sistemas/comicscrap/_assets/logos/${system.theme}-${lang}.png</path>
+<pos>0.266 0.0847222222222222</pos>
+<maxSize>0.460 0.11</maxSize>
+<origin>0.5 0.5</origin>
+<zIndex>76</zIndex>
+</image>
+
+<video name="md_video">
+<origin>0.5 0.5</origin>
+<pos>0.67109375 0.3986111111111111</pos>
+<delay>1</delay>
+<effect>none</effect>		
+<showSnapshotNoVideo>true</showSnapshotNoVideo>
+<showSnapshotDelay>true</showSnapshotDelay>
+<color>ffffff</color>
+<zIndex>90</zIndex>
+</video>
+
+<video name="md_video" ifSubset="gamelistRatio:original">
+<maxSize>0.3244791666666667 0.4416666666666667</maxSize>
+</video>
+
+
+<video name="md_video" ifSubset="gamelistRatio:fill">
+<size>0.3244791666666667 0.4416666666666667</size>
+</video>
+
+<image name="scanlines" extra="true" ifSubset="staticEffectApply:artworksApply">
+<size>0.3296875 0.4509259259259259</size>
+<pos>0.67109375 0.3986111111111111</pos>
+<origin>0.5 0.5</origin>
+<zIndex>91</zIndex>
+</image>
+
+<image name="md_thumbnail">
+<zIndex>90</zIndex>
+<origin>0.5 0</origin>
+<pos>0.91796875 0.19</pos>
+<!--<maxSize>0.1265625 0.4305555555555556</maxSize>-->
+<maxSize>0.12 0.35</maxSize>
+</image>
+
+<image name="md_fanart">
+<zIndex>85</zIndex>
+<origin>0.5 0.5</origin>
+<pos>0.91796875 0.3986111111111111</pos>
+<minSize>0.1317708333333333 0.4398148148148148</minSize>
+<color>999999</color>
+<colorEnd>000000</colorEnd>
+<gradientType>vertical</gradientType>
+<flipX>true</flipX>
+</image>
+
+<image name="md_hidden">
+<origin>0.5 0.5</origin>
+<pos>0.479 0.917</pos>
+<path>./art/sistemas/comicscrap/_assets/hidden.svg</path>
+<maxSize>0.02 0.03</maxSize>
+<color>090909</color>
+<zIndex>110</zIndex>
+<storyboard>
+<animation property="opacity" to="0" autoreverse="true" repeat="forever" duration="150" mode="Linear"/>
+</storyboard>
+</image>
+		
+<image name="md_cheevos,md_notcheevos">
+<origin>0.5 0.5</origin>
+<path>./art/sistemas/comicscrap/_assets/Contest.png</path>
+<pos>0.48 0.2</pos>
+<maxSize>0.02 0.03</maxSize>     
+<color>090909</color>
+<zIndex>110</zIndex>
+</image>
+    
+<image name="md_notcheevos">
+<color>09090933</color>
+</image> 
+    
+<image name="md_cheevos">
+<storyboard>
+<animation property="opacity" to="0" autoreverse="true" repeat="forever" duration="150" mode="Linear"/>
+</storyboard>
+</image> 
+		
+<image name="md_manual,md_nomanual">
+<origin>0 1</origin>
+<pos>0.897 0.61</pos>
+<path>./art/sistemas/comicscrap/_assets/book.png</path>
+<maxSize>0.02 0.03</maxSize>
+<color>dddddd</color>
+<zIndex>90</zIndex>
+<reflexion>0.3 0</reflexion>
+</image>
+
+<image name="md_nomanual">
+<color>80808040</color>
+</image>
+
+<image name="md_savestate,md_nosavestate">
+<origin>0 1</origin>
+<path>./art/sistemas/comicscrap/_assets/SaveState.png</path>
+<pos>0.96 0.61</pos>
+<maxSize>0.02 0.03</maxSize>
+<color>dddddd</color>
+<zIndex>90</zIndex>
+<reflexion>0.3 0</reflexion>
+</image>
+
+    
+<image name="md_nosavestate">
+<color>80808040</color>
+</image>
+	
+<image name="md_kidgame, md_notkidgame"> 
+<origin>0 1</origin>
+<pos>0.931 0.61</pos>
+<path>./art/sistemas/comicscrap/_assets/kid.svg</path>
+<maxSize>0.02 0.03</maxSize>
+<color>dddddd</color>
+<zIndex>90</zIndex>
+<linearSmooth>true</linearSmooth>
+<reflexion>0.3 0</reflexion>
+</image>
+
+<image name="md_notkidgame"> 
+<color>80808040</color>
+</image>
+
+<image name="md_flag">
+<origin>0 1</origin>
+<pos>0.858 0.61</pos>
+<maxSize>0.022 0.05</maxSize>
+<linearSmooth>true</linearSmooth>
+<zIndex>90</zIndex>
+<reflexion>0.1 0</reflexion>
+</image>
+
+<text name="md_lbl_releasedate">
+<pos>0.513 0.64</pos>
+<size>0.11 0.02</size>
+<color>000000</color>
+<fontPath>./art/sistemas/comicscrap/_assets/Shaka_Pow.ttf</fontPath>
+<fontSize>0.02</fontSize>
+<zIndex>90</zIndex>
+</text>
+		
+<datetime name="md_releasedate">
+<zIndex>90</zIndex>
+<fontSize>0.02</fontSize>
+<pos>0.625 0.62</pos>
+<color>000000</color>
+<fontPath>./art/sistemas/comicscrap/_assets/Shaka_Pow.ttf</fontPath>
+</datetime>
+
+<text name="md_lbl_genre">
+<pos>0.512 0.670</pos>
+<size>0.11 0.02</size>
+<fontSize>0.02</fontSize>
+<zIndex>90</zIndex>
+<color>000000</color>
+<fontPath>./art/sistemas/comicscrap/_assets/Shaka_Pow.ttf</fontPath>
+</text>
+		
+<text name="md_genre">
+<fontSize>0.02</fontSize>
+<zIndex>90</zIndex>
+<color>000000</color>
+<fontPath>./art/sistemas/comicscrap/_assets/Shaka_Pow.ttf</fontPath>
+<pos>0.625 0.65</pos>
+</text>
+
+<text name="md_lbl_developer">
+<pos>0.512 0.694</pos>
+<size>0.11 0.02</size>
+<fontSize>0.02</fontSize>
+<zIndex>90</zIndex>
+<color>000000</color>
+<fontPath>./art/sistemas/comicscrap/_assets/Shaka_Pow.ttf</fontPath>
+</text>
+		
+<text name="md_developer">
+<fontSize>0.02</fontSize>
+<zIndex>90</zIndex>
+<color>000000</color>
+<fontPath>./art/sistemas/comicscrap/_assets/Shaka_Pow.ttf</fontPath>
+<pos>0.626 0.68</pos>
+</text>
+
+<text name="md_lbl_players">
+<visible>false</visible> 
+</text>
+
+<text name="md_players">
+<visible>false</visible> 
+</text>
+		
+<rating name="md_rating">
+<pos>0.825 0.66</pos>
+<size>0 0.038</size>
+<filledPath>./art/sistemas/comicscrap/_assets/star_filled.png</filledPath>
+<unfilledPath>./art/sistemas/comicscrap/_assets/star_empty.png</unfilledPath>
+<zIndex>90</zIndex>
+</rating>
+		
+<text name="md_lbl_playcount">
+<pos>0.78 0.689</pos>
+<size>0.18 0.033</size>
+<fontSize>0.02</fontSize>
+<alignment>right</alignment>
+<color>000000</color>
+<fontPath>./art/sistemas/comicscrap/_assets/Shaka_Pow.ttf</fontPath>
+<zIndex>90</zIndex>
+</text>
+		
+<text name="md_playcount">
+<fontSize>0.02</fontSize>
+<color>000000</color>
+<fontPath>./art/sistemas/comicscrap/_assets/Shaka_Pow.ttf</fontPath>
+<zIndex>90</zIndex>
+<pos>0.78 0.678</pos>
+</text>
+
+<text name="md_description">
+<color>000000</color>
+<fontPath>./art/sistemas/comicscrap/_assets/Shaka_Pow.ttf</fontPath>
+<fontSize>0.023</fontSize>
+<size>0.465 0.1916666666666667</size>
+<pos>0.746875 0.8365740740740741</pos>
+<origin>0.5 0.5</origin>
+<zIndex>90</zIndex>
+</text>
+
+	    <image name="md_fanart">
+<visible>false</visible>
+        </image>
+
+	<text name="logoText">
+<visible>false</visible>
+    </text>
+
+	<image name="logo03" extra="true">
+<visible>false</visible>
+	</image>
+
+
+	</customView>
+</theme>

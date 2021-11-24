@@ -1,0 +1,568 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<theme>
+<formatVersion>7</formatVersion>
+<customView name="CoinOPS" inherits="gamecarousel">
+
+
+	   <image name="system-background" extra="true">
+<visible>false</visible> 
+      </image>
+
+    <text name="md_lbl_developer, md_lbl_genre, md_lbl_publisher, md_lbl_playcount, md_lbl_players, md_lbl_rating, md_lbl_gametime
+					md_lbl_releasedate, md_lbl_lastplayed, md_lbl_gametime,, md_genre, md_playcount,
+					md_gametime,
+					sys_label, sys_info, sys_description">
+<visible>false</visible>  
+        </text>
+		
+        <text name="md_lbl_developer, md_lbl_publisher,md_lbl_genre, md_lbl_playcount, md_lbl_players, md_lbl_rating, md_lbl_gametime
+					md_lbl_releasedate, md_lbl_lastplayed, md_lbl_gametime">
+<visible>false</visible>
+        </text>
+
+        <text name="md_genre, md_playcount, md_gametime,
+					sys_description">
+<visible>false</visible>
+        </text>
+
+
+		<text name="md_publisher">
+<visible>false</visible>
+		</text>
+
+	<text name="logoText">
+<visible>false</visible>
+    </text>
+
+	<image name="logo03" extra="true">
+<visible>false</visible>
+	</image>
+
+			<image name="bg-game-menu" extra="true">
+<visible>false</visible>
+		</image>
+
+
+		<image name="ArrowBG" extra="static">
+<visible>false</visible> 
+		</image>
+		<image name="ArrowUp" extra="static">
+<visible>false</visible> 
+		</image>
+		<image name="ArrowDown" extra="static">
+<visible>false</visible> 
+		</image>
+
+
+	   <image name="system-background" extra="true">
+<visible>false</visible> 
+      </image>
+
+
+		<image name="md-description-border2" extra="true">
+<visible>false</visible> 
+		</image>
+		<image name="gamelist-background" extra="true">
+<visible>false</visible> 
+		</image>
+
+		<image name="md-description-border" extra="true">
+<visible>false</visible> 
+		</image>
+
+		<image name="gamelist-background" extra="true">
+<visible>false</visible> 
+		</image>
+
+		<image name="background" extra="true">
+<visible>false</visible>
+		</image>
+
+
+
+		<image name="developer_logo" extra="true">
+<visible>false</visible>
+		</image>
+
+		<image name="genre_logo" extra="true">
+<visible>false</visible>
+		</image>
+
+
+	<image name="lastplayed_logo" extra="true">
+<visible>false</visible>
+		</image>
+
+
+		<image name="gametime_logo" extra="true">
+<visible>false</visible>
+		</image>
+
+		<image name="md_nomanual">
+<visible>false</visible>
+		</image>
+
+
+		<image name="md_notcheevos">
+<visible>false</visible>
+		</image>
+
+		<image name="md_nosavestate">
+<visible>false</visible>
+		</image>
+
+		<image name="md_notkidgame">
+<visible>false</visible>
+		</image>
+
+	    <image name="md_fanart">
+ <visible>false</visible>
+        </image>
+
+	  <image name="md_marquee">
+ <visible>false</visible> 
+</image>
+   
+
+	<text name="md_name">
+ <visible>false</visible> 		
+	</text>
+	
+	<image name="logo03" extra="true">
+ <visible>false</visible> 
+	</image>
+	
+
+
+	<textlist name="gamelist">
+ <visible>false</visible>
+    </textlist>	
+
+
+		<image name="md-description-border" extra="true">
+ <visible>false</visible>
+		</image>
+		<text name="md_description">
+ <visible>false</visible>
+		</text>
+		<image name="md-description-border2" extra="true">
+ <visible>false</visible>
+		</image>
+
+
+		<image name="video-background" extra="true">
+<visible>false</visible>
+		</image>
+		<image name="video-screen" extra="true">
+<visible>false</visible>
+		</image>
+
+
+
+	<text name="md_name">
+ <visible>false</visible> 		
+	</text>
+	
+	
+	<text name="logoText">
+ <visible>false</visible> 
+    </text>
+
+	<image name="system-background" extra="true">
+ <visible>false</visible> 
+    </image> 
+	
+	<image name="system-background" extra="true">
+ <visible>false</visible> 
+    </image> 
+	
+			<rating name="md_rating">
+ <visible>false</visible> 
+		</rating>
+
+
+
+<image name="0manual,md_manual">
+ <visible>false</visible> 
+</image>
+
+
+<image name="0manual" extra="true">
+<color>ffffff50</color>
+</image>
+  
+<image name="0savestate,md_savestate">
+ <visible>false</visible> 
+</image>
+
+
+<image name="0savestate" extra="true">
+<color>ffffff50</color>
+</image>
+  
+<image name="0cheevos,md_cheevos">
+ <visible>false</visible> 
+</image>
+
+
+<image name="0cheevos" extra="true">
+<color>ffffff50</color>
+</image>
+  
+<image name="0kidgame,md_kidgame">
+ <visible>false</visible> 
+</image>
+
+
+<image name="0kidgame" extra="true">
+<color>ffffff50</color>
+</image>
+  
+<image name="0hidden,md_hidden">
+ <visible>false</visible> 
+</image>
+
+
+		<image name="logo">
+ <visible>false</visible> 
+		</image>
+
+		<image name="md_thumbnail">
+ <visible>false</visible> 
+		</image>
+
+	<image name="frame" extra="true">
+ <visible>false</visible> 
+	</image>
+
+
+	<image name="frame_skin" extra="true">
+ <visible>false</visible> 
+	</image>
+
+		<image name="developer_logo" extra="true">
+ <visible>false</visible> 
+		</image>
+
+
+		<image name="genre_logo" extra="true">
+ <visible>false</visible> 
+		</image>
+
+		<image name="gametime_logo" extra="true">
+ <visible>false</visible> 
+		</image>
+
+<image name="lastplayed_logo" extra="true">
+ <visible>false</visible> 
+		</image>
+
+<image name="overlay" extra="true">
+ <visible>false</visible>
+</image>  
+
+		<image name="release_date_logo" extra="true">
+ <visible>false</visible> 
+		</image>
+
+		<image name="publisher_logo" extra="true">
+<visible>false</visible> 
+		</image>
+
+
+<image name="players_logo" extra="true">
+<visible>false</visible> 
+		</image>
+
+<gamecarousel name="gamecarousel">
+<zIndex>1002</zIndex>	      
+<type>vertical_wheel</type>
+<pos>0.31 0</pos>
+<size>1 1</size>
+<logoScale>1.45</logoScale>
+<logoSize>0.150 0.260</logoSize>
+<color>00000000</color>
+<maxLogoCount>30</maxLogoCount>
+<logoRotation>-8</logoRotation>
+<logoRotationOrigin>3.0 0.5</logoRotationOrigin>
+<logoAlignment>center</logoAlignment>   
+<imageSource>marquee</imageSource>
+</gamecarousel> 
+
+<video name="md_video">
+<pos>0.2815 0.55</pos>
+<size>0.3958 0.48</size>
+<origin>0.5 0.5</origin>
+<delay>0</delay>
+<showSnapshotNoVideo>false</showSnapshotNoVideo>
+<showSnapshotDelay>false</showSnapshotDelay>
+<zIndex>998</zIndex>
+</video>
+
+
+	<image name="md_fanart">
+      <pos>0 0</pos>
+      <origin>0 0</origin>
+      <size>1 1</size>
+      <zIndex>1</zIndex>
+	     <storyboard>
+         <animation property="y" from="-2" begin="0" duration="0" mode="easyOut"/>
+         <animation property="scale" to="1.2" begin="350" autoreverse="true" duration="3200" repeat="forever" mode="easyIn"/>
+         <animation property="opacity" from="0" to="1" duration="350" mode="linear"/>
+		</storyboard>
+    </image>
+
+<image name="pointer" extra="true">
+<pos>0.97 0.50</pos>
+<origin>0.5 0.5</origin>
+<size>0.055 0.155</size>
+<color>ffffffA6</color>
+<path>./art/sistemas/pointer/default.png</path>
+<path>./_inc/pointer/${system.theme}.png</path>
+<zIndex>999</zIndex> 
+<storyboard repeat="forever">
+<animation property="x" from="0.963" to="0.940" duration="60" autoreverse="true" begin="4000" repeat="3"/>
+</storyboard>
+</image>
+
+		
+  <image name="sombra" extra="true">
+    <origin>0 0</origin>
+    <pos>0 0</pos>
+    <size>1 1</size>
+	<path>./_inc/CoinOPS.png</path>
+    <zIndex>997</zIndex> 
+    </image>
+
+  <image name="sombra3" extra="true">
+    <origin>0 0</origin>
+    <pos>0 0</pos>
+    <size>1 1</size>
+	<path>./_inc/CoinOPS2.png</path>
+    <zIndex>997</zIndex> 
+    </image>  
+	
+	  <image name="sombra1" extra="true">
+    <origin>0 0</origin>
+    <pos>0 0</pos>
+    <size>1 1</size>
+	<path>./_inc/coinops/${system.theme}.png</path>
+    <zIndex>997</zIndex> 
+    </image> 
+
+		
+<image name="md_marquee">
+<pos>0.290 0.127</pos>
+<size>0.380 0.160</size>
+<origin>0.5 0.5</origin>
+<zIndex>1001</zIndex>
+</image>
+ 
+
+		
+  <image name="sombra" extra="true">
+    <origin>0 0</origin>
+    <pos>0 0</pos>
+    <size>1 1</size>
+	<path>./_inc/coinops/${system.theme}.png</path>
+    <zIndex>999</zIndex> 
+    </image> 
+	
+	  <image name="sombra1" extra="true">
+    <origin>0 0</origin>
+    <pos>0 0</pos>
+    <size>1 1</size>
+	<path>./_inc/CoinOPS1.png</path>
+    <zIndex>996</zIndex> 
+    </image> 
+
+<image name="gamebar" extra="true">
+<linearSmooth>true</linearSmooth>
+<path>./_assets/gamebar.png</path>
+<origin>0.5 0</origin>
+<pos>0.5 0</pos>
+<zIndex>9000</zIndex>
+<maxSize>1 1</maxSize>
+</image>
+
+<image name="md_hiddenExtra" extra="true">
+<origin>0.5 1</origin>
+<pos>0.73 0.0325</pos>
+<path>./_assets/hidden.svg</path>
+<maxSize>0.02 0.03</maxSize>
+<color>20202099</color>
+<zIndex>9001</zIndex>
+</image>
+
+<image name="md_hidden">
+<origin>0.5 1</origin>
+<pos>0.73 0.0325</pos>
+<path>./hidden.svg</path>
+<maxSize>0.02 0.03</maxSize>
+<color>dddddd</color>
+<zIndex>9001</zIndex>
+</image>
+
+<text name="md_players">
+<fontPath>./_assets/players.ttf</fontPath>
+<color>dddddd</color>
+<origin>0.5 1</origin>
+<pos>0.585 0.05</pos>
+<size>0.05 0.05</size>
+<y>0.05</y>
+<x>0.6</x>
+<zIndex>9001</zIndex>
+</text>
+
+<image name="md_cheevosExtra" extra="true">
+<origin>0.5 1</origin>
+<path>./_assets/Contest.png</path>
+<pos>0.555 0.05</pos>
+<maxSize>0.02 0.03</maxSize>     
+<color>20202099</color>
+<zIndex>9000</zIndex>
+</image>
+		
+<image name="md_cheevos,md_notcheevos">
+<origin>0.5 1</origin>
+<path>./_assets/Contest.png</path>
+<pos>0.555 0.05</pos>
+<maxSize>0.02 0.03</maxSize>     
+<color>dddddd</color>
+<zIndex>9001</zIndex>
+</image>
+    
+<image name="md_notcheevos">
+<color>606060</color>
+</image> 
+    
+<image name="md_cheevos">
+<storyboard>
+<animation property="opacity" to="0" autoreverse="true" repeat="forever" duration="150" mode="Linear"/>
+</storyboard>
+</image> 
+		
+<image name="md_manual,md_nomanual">
+<origin>0.5 1</origin>
+<pos>0.465 0.05</pos>
+<path>./_assets/book.png</path>
+<maxSize>0.02 0.03</maxSize>
+<color>dddddd</color>
+<zIndex>9001</zIndex>
+<reflexion>0.3 0</reflexion>
+</image>
+
+<image name="md_nomanual">
+<color>606060</color>
+</image>
+
+<image name="md_savestateExtra" extra="true">
+<origin>0.5 1</origin>
+<path>./_assets/SaveState.png</path>
+<pos>0.525 0.05</pos>
+<maxSize>0.02 0.03</maxSize>
+<color>20202099</color>
+<zIndex>9001</zIndex>
+<reflexion>0.3 0</reflexion>
+</image>
+
+<image name="md_savestate,md_nosavestate">
+<origin>0.5 1</origin>
+<path>./_assets/SaveState.png</path>
+<pos>0.525 0.05</pos>
+<maxSize>0.02 0.03</maxSize>
+<color>dddddd</color>
+<zIndex>9001</zIndex>
+<reflexion>0.3 0</reflexion>
+</image>
+
+    
+<image name="md_nosavestate">
+<color>606060</color>
+</image>
+	
+<image name="md_kidgame, md_notkidgame"> 
+<origin>0.5 1</origin>
+<pos>0.495 0.05</pos>
+<path>./_assets/kid.svg</path>
+<maxSize>0.02 0.03</maxSize>
+<color>dddddd</color>
+<zIndex>9001</zIndex>
+<linearSmooth>true</linearSmooth>
+<reflexion>0.3 0</reflexion>
+</image>
+
+<image name="md_notkidgame"> 
+<color>606060</color>
+</image>
+
+<image name="md_flag">
+<origin>0.5 1</origin>
+<pos>0.425 0.05</pos>
+<maxSize>0.022 0.05</maxSize>
+<linearSmooth>true</linearSmooth>
+<zIndex>9001</zIndex>
+<reflexion>0.1 0</reflexion>
+</image>
+
+<image name="md_notkidgame,md_kidgame,md_nosavestate,md_savestate,md_savestateExtra,md_nomanual,md_manual,md_cheevos,md_notcheevos,md_cheevosExtra,md_flag" ifSubset="screen ratio:43">
+<y>0.04</y>
+</image>
+
+<datetime name="md_releasedate">
+<fontSize>0.016</fontSize>
+<size>0.14 0.03</size>
+<origin>1 0.5</origin>
+<alignment>right</alignment>
+<pos>0.705 0.0175</pos>
+<color>dddddd</color>
+<fontPath>./_assets/Nunito-SemiBold.ttf</fontPath>
+<zIndex>9001</zIndex>
+</datetime>
+
+
+<text name="md_developer">
+<fontSize>0.016</fontSize>
+<size>0.12 0.03</size>
+<origin>0 0.5</origin>
+<alignment>left</alignment>
+<pos>0.265 0.0175</pos>
+<color>dddddd</color>
+<fontPath>./_assets/Nunito-SemiBold.ttf</fontPath>
+<zIndex>9001</zIndex>
+</text>
+
+<rating name="md_rating">
+<origin>0.5 0.5</origin>
+<color>dddddddd</color>
+<pos>0.5 0.06</pos>
+<size>0 0.02</size>
+<zIndex>9001</zIndex>
+</rating>
+
+<control name="md_rating,md_developer,md_releasedate,md_notkidgame,md_kidgame,md_nosavestate,md_savestate,md_savestateExtra,md_nomanual,md_manual,md_cheevos,md_notcheevos,md_cheevosExtra,md_flag,md_hidden,md_hiddenExtra,md_players,gamebar">
+<storyboard event="open">
+<animation property="opacity" from="1" to="1" duration="1" mode="linear"/>
+<animation property="offsetY" to="-0.15" duration="600" mode="easeIn" begin="3000"/>
+</storyboard>
+<storyboard event="activateNext">
+<animation property="opacity" from="1" to="1" duration="1" mode="linear"/>
+<animation property="offsetY" to="-0.15" duration="600" mode="easeIn" begin="3000"/>
+</storyboard>
+<storyboard event="activatePrev">
+<animation property="opacity" from="1" to="1" duration="1" mode="linear"/>
+<animation property="offsetY" to="-0.15" duration="600" mode="easeIn" begin="3000"/>
+</storyboard>
+<storyboard event="deactivateNext">
+<animation property="opacity" to="0" duration="1" mode="easeOut"/>
+</storyboard>
+<storyboard event="deactivatePrev">
+<animation property="opacity" to="0" duration="1" mode="easeOut"/>
+</storyboard>
+</control>  		
+
+   </customView>
+   
+
+</theme>
