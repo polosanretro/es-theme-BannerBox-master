@@ -1,0 +1,28 @@
+<theme>
+<formatVersion>7</formatVersion>
+
+	<view name="system">
+
+
+	
+	<text name="label_text" extra="true">
+	<fontSize>0.009</fontSize>
+	<fontPath>./../roundedledboard.ttf</fontPath>
+	<color>ffffff</color>
+	<glowColor>000000</glowColor>
+	<glowSize>2</glowSize>
+	<glowOffset>1</glowOffset>		
+	<x>0.49</x>
+	<y>0.585</y>
+	<zIndex>500</zIndex>
+	</text>
+	
+	<text name="label_text" extra="true" ifSubset="screen ratio:43">
+	<fontSize>0.006</fontSize>
+	<y>0.568</y>
+	</text>
+	
+	</view>
+
+	
+</theme>

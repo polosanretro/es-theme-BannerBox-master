@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<theme>
+
+	<formatVersion>7</formatVersion>
+
+	<view name="system">
+
+    <video name="staticBackgroundVideo">
+	
+		<path>./../../ambiance/oddworld.mp4</path>
+		<pos>2 2</pos>
+		<size>0 0</size>
+		<delay>0</delay>
+	
+	</video>
+	
+	</view>
+	
+	<view name="system,basic,detailed,video,grid,gamecarousel">
+
+    <video name="coin" extra="true">
+	
+		<path>./../../ambiance/follow_me.mp4</path>
+		<pos>2 2</pos>
+		<size>0 0</size>
+		<delay>0</delay>
+		<loops>0</loops>
+	
+	</video>
+	
+    <video name="ambiance" extra="true">
+
+	
+		<path>./../../ambiance/oddworld.mp4</path>
+		<pos>2 2</pos>
+		<size>0 0</size>
+		<delay>0</delay>
+	
+	</video>
+
+	</view>
+
+</theme>
