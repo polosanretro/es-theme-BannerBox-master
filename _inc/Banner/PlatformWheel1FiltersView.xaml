@@ -1,0 +1,459 @@
+<!--
+COMMUNITY Theme Creator for BigBox - Version 1.0.9.8
+Theme:        BannerBox
+Aspect Ratio: 16:9
+Developed by: Faeran
+Published:    Tuesday 03, August 2021 @ 11:39 AM
+-->
+<UserControl Name="Canvas" ClipToBounds="True"
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+	xmlns:cal="http://www.caliburnproject.org"
+	
+	xmlns:transitions="clr-namespace:Unbroken.LaunchBox.Windows.Transitions;assembly=Unbroken.LaunchBox.Windows"
+	xmlns:coverFlow="clr-namespace:Unbroken.LaunchBox.Windows.Controls.CoverFlow;assembly=Unbroken.LaunchBox.Windows"
+	xmlns:bigBox="clr-namespace:Unbroken.LaunchBox.Windows;assembly=Unbroken.LaunchBox.Windows"
+	xmlns:controls="clr-namespace:Unbroken.LaunchBox.Windows.Controls;assembly=Unbroken.LaunchBox.Windows"
+	xmlns:videos="clr-namespace:Unbroken.LaunchBox.Windows.BigBox.Controls;assembly=BigBox"
+	xmlns:wpf="clr-namespace:Unbroken.LaunchBox.Windows;assembly=Unbroken.LaunchBox.Windows"
+	xmlns:gif="clr-namespace:WpfAnimatedGif;assembly=Unbroken.LaunchBox.Windows"
+	xmlns:sys="clr-namespace:System;assembly=mscorlib"
+	xmlns:lbsc="clr-namespace:ListBoxScrollCenterNS;assembly=COMMUNITYlb061"
+	xmlns:community="clr-namespace:COMMUNITYconverters;assembly=COMMUNITYc154"
+	xmlns:commc="clr-namespace:COMMUNITY_Controls;assembly=COMMUNITYcontrols068"
+		
+	mc:Ignorable="d"
+	d:DesignHeight="3840" d:DesignWidth="2160" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Style="{DynamicResource UserControlStyle}" >
+	
+	<UserControl.Resources>
+		<community:ReturnElementX                   x:Key="ReturnElementX"/>
+		<community:TextToBrush     					x:Key="TextToBrush"/>
+		<community:FormatDateTime 					x:Key="FormatDateTime"/>
+		<community:CurrentDateTime 					x:Key="CurrentDateTime"/>
+		<community:UseValueOrFallbackWithFormat     x:Key="UseValueOrFallbackWithFormat"/>
+		<community:BatteryStatus 					x:Key="BatteryStatus"/>
+		<community:ScalePropertyValue               x:Key="ScalePropertyValue"/>
+		<community:ScalePropertyValueD              x:Key="ScalePropertyValueD"/>
+		<community:GetMediaFileName                 x:Key="GetMediaFileName"/>
+		<community:OffscreenPosition                x:Key="OffscreenPosition"/>
+		<community:FileFallbackWithSearch			x:Key="FileFallbackWithSearch"/>
+		<community:TextFormat                       x:Key="TextFormat"/>
+		<community:GetFileUsingTitle                x:Key="GetFileUsingTitle"/>
+		<community:GetCustomImageFile               x:Key="GetCustomImageFile"/>
+		<community:MakeMeSlightlyBigger             x:Key="MakeMeSlightlyBigger"/>
+		<community:MakeMeBigger                     x:Key="MakeMeBigger"/>
+		<community:MakeMeMuchBigger                 x:Key="MakeMeMuchBigger"/>
+		<community:GetCustomFieldValue              x:Key="GetCustomFieldValue"/>
+		<community:FileExists                       x:Key="FileExists"/>
+		<community:ImageCompanion                   x:Key="ImageCompanion"/>
+		<community:ScaleThickness                   x:Key="ScaleThickness"/>
+		<community:IsGreaterThanOrEqualTo           x:Key="IsGreaterThanOrEqualTo"/>
+		<community:IsGreaterThan                    x:Key="IsGreaterThan"/>
+		<community:IsLessThanOrEqualTo              x:Key="IsLessThanOrEqualTo"/>
+		<community:IsLessThan                       x:Key="IsLessThan"/>
+		<community:IsNot                            x:Key="IsNot"/>
+		<community:Contains                         x:Key="Contains"/>
+		<community:IsNullOrEmpty                    x:Key="IsNullOrEmpty"/>
+		
+			
+			
+			
+	</UserControl.Resources>
+	
+	
+	<!-- View Start -->
+	<Canvas Height="{Binding ElementName=Canvas, Path=ActualHeight}" Width="{Binding ElementName=Canvas, Path=ActualWidth}" Background="Black" >
+		<commc:UCNavigationExtension x:Name="ucNavigationExtension" ucNavigationInProgress="{Binding NavigationInProgress}" ucNavigationDirection="{Binding NavigationDirection}" ucIsInGameDetails="{Binding IsInGameDetails}" Visibility="Collapsed" />
+		
+			
+		
+		
+		<!-- Wheel -->
+		<Grid x:Name="Wheel" HorizontalAlignment="Left" VerticalAlignment="Top" Visibility="Visible" Width="{Binding ElementName=Canvas,Path=ActualWidth,Converter={StaticResource ScalePropertyValueD},ConverterParameter=W;2560;2560}" Height="{Binding ElementName=Canvas,Path=ActualHeight,Converter={StaticResource ScalePropertyValueD},ConverterParameter=H;1440;1440}" RenderTransformOrigin="0.5,0.5" Panel.ZIndex="5"  >
+				
+			<coverFlow:FlowControl x:Name="FlowControl" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
+				Opacity="1.0" ImageType="Banner" CurveAmount="0" VisibleCount="10" PageSize="22"
+				CameraZPosition="2.5" ItemZPosition="1" SelectedItemZPosition="1" Spacing="0.73" RotationAmount="0" MaxVerticalImageResolutionOverride="800" RenderTransformOrigin=".5,.5" >
+				<coverFlow:FlowControl.CoverFactory>
+					<coverFlow:HorizontalWheelCoverFactory />
+				</coverFlow:FlowControl.CoverFactory>
+				<coverFlow:FlowControl.RenderTransform>
+					<TransformGroup>
+						<RotateTransform Angle="0" />
+						<ScaleTransform ScaleX="1" ScaleY="1" />
+						<SkewTransform  AngleX="0" AngleY="0" />
+					</TransformGroup>
+				</coverFlow:FlowControl.RenderTransform>
+			</coverFlow:FlowControl>
+			<Grid.RenderTransform>
+				<TransformGroup>
+					<SkewTransform AngleX="0" AngleY="0"/>
+					<RotateTransform Angle="0"/>
+					<TranslateTransform X="{Binding ElementName=Canvas,Path=ActualWidth,Converter={StaticResource ScalePropertyValueD},ConverterParameter=X;0;2560}" Y="{Binding ElementName=Canvas,Path=ActualHeight,Converter={StaticResource ScalePropertyValueD},ConverterParameter=Y;0;1440}" />
+				</TransformGroup>
+			</Grid.RenderTransform>
+				
+		</Grid>
+		
+		<!-- Shadow Grid -->
+		<Grid x:Name="Grid2" HorizontalAlignment="Left" VerticalAlignment="Top" Visibility="Visible" Width="{Binding ElementName=Canvas, Path=ActualWidth}" Height="{Binding ElementName=Canvas, Path=ActualHeight}" RenderTransformOrigin="0.5,0.5" Panel.ZIndex="20"  >
+				
+			<Grid x:Name="Grid2container" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin=".5,.5" Background="Transparent" Opacity="1.0" ClipToBounds="False">
+				<!-- Right Shadow -->
+				<Grid x:Name="Rectangle2" HorizontalAlignment="Left" VerticalAlignment="Top" Visibility="Visible" Width="{Binding ElementName=Canvas,Path=ActualWidth,Converter={StaticResource ScalePropertyValueD},ConverterParameter=W;1024;2560}" Height="{Binding ElementName=Canvas,Path=ActualHeight,Converter={StaticResource ScalePropertyValueD},ConverterParameter=H;1440;1440}" RenderTransformOrigin="0.5,0.5" Panel.ZIndex="10"  >
+						
+					<Grid>
+						<Rectangle x:Name="Rectangle2rect" HorizontalAlignment="Left" VerticalAlignment="Top" Fill="#FF000000" Opacity="1.0" Stretch="Fill" RenderTransformOrigin=".5,.5" Width="{Binding ElementName=Rectangle2,Path=ActualWidth}" Height="{Binding ElementName=Rectangle2,Path=ActualHeight}">
+							<Rectangle.RenderTransform>
+								<TransformGroup>
+									<RotateTransform Angle="0" />
+									<ScaleTransform ScaleX="1" ScaleY="1" />
+									<SkewTransform  AngleX="0" AngleY="0" />
+								</TransformGroup>
+							</Rectangle.RenderTransform>
+								
+						</Rectangle>
+					</Grid>
+					<Grid.RenderTransform>
+						<TransformGroup>
+							<SkewTransform AngleX="0" AngleY="0"/>
+							<RotateTransform Angle="0"/>
+							<TranslateTransform X="{Binding ElementName=Canvas,Path=ActualWidth,Converter={StaticResource ScalePropertyValueD},ConverterParameter=X;1536;2560}" Y="{Binding ElementName=Canvas,Path=ActualHeight,Converter={StaticResource ScalePropertyValueD},ConverterParameter=Y;0;1440}" />
+						</TransformGroup>
+					</Grid.RenderTransform>
+						
+				</Grid>
+				<!-- Left Shadow -->
+				<Grid x:Name="Rectangle1" HorizontalAlignment="Left" VerticalAlignment="Top" Visibility="Visible" Width="{Binding ElementName=Canvas,Path=ActualWidth,Converter={StaticResource ScalePropertyValueD},ConverterParameter=W;1024;2560}" Height="{Binding ElementName=Canvas,Path=ActualHeight,Converter={StaticResource ScalePropertyValueD},ConverterParameter=H;1440;1440}" RenderTransformOrigin="0.5,0.5" Panel.ZIndex="15"  >
+						
+					<Grid>
+						<Rectangle x:Name="Rectangle1rect" HorizontalAlignment="Left" VerticalAlignment="Top" Fill="#FF000000" Opacity="1.0" Stretch="Fill" RenderTransformOrigin=".5,.5" Width="{Binding ElementName=Rectangle1,Path=ActualWidth}" Height="{Binding ElementName=Rectangle1,Path=ActualHeight}">
+							<Rectangle.RenderTransform>
+								<TransformGroup>
+									<RotateTransform Angle="0" />
+									<ScaleTransform ScaleX="1" ScaleY="1" />
+									<SkewTransform  AngleX="0" AngleY="0" />
+								</TransformGroup>
+							</Rectangle.RenderTransform>
+								
+						</Rectangle>
+					</Grid>
+					<Grid.RenderTransform>
+						<TransformGroup>
+							<SkewTransform AngleX="0" AngleY="0"/>
+							<RotateTransform Angle="0"/>
+							<TranslateTransform X="{Binding ElementName=Canvas,Path=ActualWidth,Converter={StaticResource ScalePropertyValueD},ConverterParameter=X;0;2560}" Y="{Binding ElementName=Canvas,Path=ActualHeight,Converter={StaticResource ScalePropertyValueD},ConverterParameter=Y;0;1440}" />
+						</TransformGroup>
+					</Grid.RenderTransform>
+						
+				</Grid>
+				<Grid.RenderTransform>
+					<TransformGroup>
+						<RotateTransform Angle="0" />
+						<ScaleTransform ScaleX="1" ScaleY="1" />
+						<SkewTransform  AngleX="0" AngleY="0" />
+					</TransformGroup>
+				</Grid.RenderTransform>
+					
+				<Grid.Style>
+					<Style TargetType="Grid" >
+						<Setter Property="Width" Value="{Binding ElementName=Grid2,Path=ActualWidth}" />
+						<Setter Property="Height" Value="{Binding ElementName=Grid2,Path=ActualHeight}" />
+						<Style.Triggers>
+							<DataTrigger Binding="{Binding ElementName=Grid2, Path=Width}" Value="NaN"   >
+								<Setter Property="Width" Value="Auto" />
+							</DataTrigger>
+							<DataTrigger Binding="{Binding ElementName=Grid2, Path=Height}" Value="NaN"   >
+								<Setter Property="Height" Value="Auto" />
+							</DataTrigger>
+						</Style.Triggers>
+					</Style>
+				</Grid.Style>
+			</Grid>
+			<Grid.RenderTransform>
+				<TransformGroup>
+					<SkewTransform AngleX="0" AngleY="0"/>
+					<RotateTransform Angle="0"/>
+					<TranslateTransform X="0" Y=" 0"/>
+				</TransformGroup>
+			</Grid.RenderTransform>
+				
+		</Grid>
+		<!-- Storyboards -->
+		<TextBlock Text="{Binding Path=NavigationStartedCounter, NotifyOnTargetUpdated=True}" Visibility="Collapsed">
+			<TextBlock.Triggers>
+				<EventTrigger RoutedEvent="Binding.TargetUpdated">
+					<BeginStoryboard x:Name="Grid2_SB1" HandoffBehavior="Compose">
+						<Storyboard AutoReverse="False" >
+							<DoubleAnimation Storyboard.TargetName="Grid2" Storyboard.TargetProperty="Opacity"
+								BeginTime="00:00:00" To="0" Duration="00:00:00.25">
+								<DoubleAnimation.EasingFunction>
+									<CircleEase EasingMode="EaseOut"/>
+								</DoubleAnimation.EasingFunction>
+							</DoubleAnimation>
+						</Storyboard>
+					</BeginStoryboard>
+				</EventTrigger>
+			</TextBlock.Triggers>
+		</TextBlock>
+		<TextBlock Text="{Binding Path=ActivePlatform.Name, NotifyOnTargetUpdated=True}" Visibility="Collapsed">
+			<TextBlock.Triggers>
+				<EventTrigger RoutedEvent="Binding.TargetUpdated">
+					<BeginStoryboard x:Name="Grid2_SB2" HandoffBehavior="Compose">
+						<Storyboard AutoReverse="False" >
+							<DoubleAnimation Storyboard.TargetName="Grid2" Storyboard.TargetProperty="Opacity"
+								BeginTime="00:00:01.5" From="0" To="0.75" Duration="00:00:01">
+								<DoubleAnimation.EasingFunction>
+									<PowerEase EasingMode="EaseInOut"/>
+								</DoubleAnimation.EasingFunction>
+							</DoubleAnimation>
+						</Storyboard>
+					</BeginStoryboard>
+				</EventTrigger>
+			</TextBlock.Triggers>
+		</TextBlock>
+		
+		<!-- Info Grid -->
+		<Grid x:Name="Grid1" HorizontalAlignment="Left" VerticalAlignment="Top" Visibility="Visible" Width="{Binding ElementName=Canvas,Path=ActualWidth,Converter={StaticResource ScalePropertyValueD},ConverterParameter=W;512;2560}" Height="{Binding ElementName=Canvas,Path=ActualHeight,Converter={StaticResource ScalePropertyValueD},ConverterParameter=H;125.33333333333333;1440}" RenderTransformOrigin="0.5,0.5" Panel.ZIndex="50"  >
+				
+			<Grid x:Name="Grid1container" HorizontalAlignment="Center" VerticalAlignment="Top" RenderTransformOrigin=".5,.5" Background="Transparent" Opacity="1.0" ClipToBounds="False">
+				<!-- Info Stack -->
+				<Grid x:Name="Stack1" Width="Auto" Height="Auto" HorizontalAlignment="Left" VerticalAlignment="Top" Visibility="Visible" RenderTransformOrigin="0.5,0.5" Panel.ZIndex="45"  >
+						
+					<Grid x:Name="Stack1grid">
+						<StackPanel x:Name="Stack1container" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin=".5,.5" Background="Transparent" Opacity="1.0" ClipToBounds="False">
+							<!-- Release Date 1 -->
+							<Grid x:Name="ReleaseDate1" HorizontalAlignment="Left" VerticalAlignment="Center" Visibility="Visible" Width="{Binding ElementName=Canvas,Path=ActualWidth,Converter={StaticResource ScalePropertyValueD},ConverterParameter=W;10.666666666666666;2560}" MinWidth="{Binding ElementName=Canvas,Path=ActualWidth,Converter={StaticResource ScalePropertyValueD},ConverterParameter=W;512;2560}" MaxWidth="{Binding ElementName=Canvas,Path=ActualWidth,Converter={StaticResource ScalePropertyValueD},ConverterParameter=W;512;2560}" Height="Auto" MinHeight="{Binding ElementName=Canvas,Path=ActualHeight,Converter={StaticResource ScalePropertyValueD},ConverterParameter=H;66.66666666666666;1440}" MaxHeight="{Binding ElementName=Canvas,Path=ActualHeight,Converter={StaticResource ScalePropertyValueD},ConverterParameter=H;66.66666666666666;1440}" RenderTransformOrigin="0.5,0.5" Panel.ZIndex="40"  >
+								<TextBlock x:Name="variableReleaseDate1" Text="{Binding Path=ActivePlatform.ReleaseDate}" Visibility="Collapsed"/>
+								<TextBlock x:Name="variableReleaseDate1Formatted" Text="{Binding ElementName=variableReleaseDate1,Path=Text, Converter={StaticResource FormatDateTime},ConverterParameter='yyyy'}" Visibility="Collapsed" />
+								<TextBlock x:Name="variableReleaseDate1withfallbacklogic" Visibility="Collapsed" Text="{Binding ElementName=variableReleaseDate1Formatted,Path=Text, Converter={StaticResource UseValueOrFallbackWithFormat},ConverterParameter=';None;No'}"/>
+								
+								<TextBlock x:Name="ReleaseDate1text" Opacity="1.0" Foreground="White" FontFamily="LAUNCHBOX_ROOT_FOLDER/Themes/BannerBox/Fonts/Colus-Regular.ttf#Colus" FontStyle="Normal" FontWeight="Normal"
+									TextAlignment="Center" TextWrapping="NoWrap" TextTrimming="None" VerticalAlignment="Center"
+									RenderTransformOrigin=".5,.5" Text="{Binding ElementName=variableReleaseDate1withfallbacklogic, Path=Text}"
+									FontSize="{Binding ElementName=Canvas,Path=ActualHeight, Converter={StaticResource ScalePropertyValueD}, ConverterParameter=FontSize;80;1440}" >
+										
+									<TextBlock.RenderTransform>
+										<TransformGroup>
+											<RotateTransform Angle="0" />
+											<ScaleTransform ScaleX="1" ScaleY="1" />
+											<SkewTransform  AngleX="0" AngleY="0" />
+										</TransformGroup>
+									</TextBlock.RenderTransform>
+									
+								</TextBlock>
+								<Grid.RenderTransform>
+									<TransformGroup>
+										<SkewTransform AngleX="0" AngleY="0"/>
+										<RotateTransform Angle="0"/>
+										<TranslateTransform X="0" Y=" 0"/>
+									</TransformGroup>
+								</Grid.RenderTransform>
+									
+							</Grid>
+							<!-- Total Games Dock -->
+							<Grid x:Name="Dock1" Width="Auto" MinWidth="{Binding ElementName=Canvas,Path=ActualWidth,Converter={StaticResource ScalePropertyValueD},ConverterParameter=W;512;2560}" MaxWidth="{Binding ElementName=Canvas,Path=ActualWidth,Converter={StaticResource ScalePropertyValueD},ConverterParameter=W;512;2560}" Height="Auto" MinHeight="{Binding ElementName=Canvas,Path=ActualHeight,Converter={StaticResource ScalePropertyValueD},ConverterParameter=H;42.666666666666664;1440}" MaxHeight="{Binding ElementName=Canvas,Path=ActualHeight,Converter={StaticResource ScalePropertyValueD},ConverterParameter=H;42.666666666666664;1440}" HorizontalAlignment="Center" VerticalAlignment="Top" Visibility="Visible" RenderTransformOrigin="0.5,0.5" Panel.ZIndex="35"  >
+								<Grid.Margin>
+									<MultiBinding Converter="{StaticResource ScaleThickness}">
+										<Binding Path="." Source="0,5.333333333333333,0,0;2560;1440"/>
+										<Binding Path="ActualWidth" ElementName="Canvas"/>
+										<Binding Path="ActualHeight" ElementName="Canvas"/>
+									</MultiBinding>
+								</Grid.Margin>
+									
+								<Grid x:Name="Dock1grid">
+									<DockPanel x:Name="Dock1container" HorizontalAlignment="Center" VerticalAlignment="Top" RenderTransformOrigin=".5,.5" Background="Transparent" Opacity="1.0" ClipToBounds="False" >
+										<!-- Total Games Metadata -->
+										<Grid x:Name="Text3" HorizontalAlignment="Center" VerticalAlignment="Center" Visibility="Visible" Width="Auto" Height="Auto" RenderTransformOrigin="0.5,0.5" Panel.ZIndex="30"  >
+												
+											
+											<TextBlock x:Name="Text3text" Opacity="1.0" Foreground="White" FontFamily="LAUNCHBOX_ROOT_FOLDER/Themes/BannerBox/Fonts/BannerBox1.ttf#BannerBox1" FontStyle="Normal" FontWeight="Normal"
+												TextAlignment="Center" TextWrapping="NoWrap" TextTrimming="None" VerticalAlignment="Center"
+												Text="{Binding Path=GamesCount, Converter={StaticResource UseValueOrFallbackWithFormat},ConverterParameter=';None;No'}" RenderTransformOrigin=".5,.5"
+												FontSize="{Binding ElementName=Canvas,Path=ActualHeight, Converter={StaticResource ScalePropertyValueD}, ConverterParameter=FontSize;42.666666666666664;1440}" >
+												
+												<TextBlock.RenderTransform>
+													<TransformGroup>
+														<RotateTransform Angle="0" />
+														<ScaleTransform ScaleX="1" ScaleY="1" />
+														<SkewTransform  AngleX="0" AngleY="0" />
+													</TransformGroup>
+												</TextBlock.RenderTransform>
+												
+											</TextBlock>
+											<Grid.RenderTransform>
+												<TransformGroup>
+													<SkewTransform AngleX="0" AngleY="0"/>
+													<RotateTransform Angle="0"/>
+													<TranslateTransform X="0" Y=" 0"/>
+												</TransformGroup>
+											</Grid.RenderTransform>
+												
+										</Grid>
+										<!-- GAMES -->
+										<Grid x:Name="Text2" HorizontalAlignment="Center" VerticalAlignment="Center" Visibility="Visible" Width="Auto" Height="Auto" RenderTransformOrigin="0.5,0.5" Panel.ZIndex="25"  >
+											<Grid.Margin>
+												<MultiBinding Converter="{StaticResource ScaleThickness}">
+													<Binding Path="." Source="6.666666666666666,0,0,0;2560;1440"/>
+													<Binding Path="ActualWidth" ElementName="Canvas"/>
+													<Binding Path="ActualHeight" ElementName="Canvas"/>
+												</MultiBinding>
+											</Grid.Margin>
+											
+											
+											<TextBlock x:Name="Text2text" Opacity="1.0" Foreground="White" FontFamily="LAUNCHBOX_ROOT_FOLDER/Themes/BannerBox/Fonts/BannerBox1.ttf#BannerBox1" FontStyle="Normal" FontWeight="Normal"
+												TextAlignment="Center" TextWrapping="NoWrap" TextTrimming="None" VerticalAlignment="Center"
+												Text="GAMES" RenderTransformOrigin=".5,.5"
+												FontSize="{Binding ElementName=Canvas,Path=ActualHeight, Converter={StaticResource ScalePropertyValueD}, ConverterParameter=FontSize;42.666666666666664;1440}" >
+												
+												<TextBlock.RenderTransform>
+													<TransformGroup>
+														<RotateTransform Angle="0" />
+														<ScaleTransform ScaleX="1" ScaleY="1" />
+														<SkewTransform  AngleX="0" AngleY="0" />
+													</TransformGroup>
+												</TextBlock.RenderTransform>
+												
+											</TextBlock>
+											<Grid.RenderTransform>
+												<TransformGroup>
+													<SkewTransform AngleX="0" AngleY="0"/>
+													<RotateTransform Angle="0"/>
+													<TranslateTransform X="0" Y=" 0"/>
+												</TransformGroup>
+											</Grid.RenderTransform>
+												
+										</Grid>
+										<DockPanel.RenderTransform>
+											<TransformGroup>
+												<RotateTransform Angle="0" />
+												<ScaleTransform ScaleX="1" ScaleY="1" />
+												<SkewTransform  AngleX="0" AngleY="0" />
+											</TransformGroup>
+										</DockPanel.RenderTransform>
+											
+									</DockPanel>
+									<Grid.Style>
+										<Style TargetType="Grid" >
+											<Setter Property="Width" Value="{Binding ElementName=Dock1,Path=ActualWidth}" />
+											<Setter Property="Height" Value="{Binding ElementName=Dock1,Path=ActualHeight}" />
+											<Style.Triggers>
+												<DataTrigger Binding="{Binding ElementName=Dock1, Path=Width}" Value="NaN"   >
+													<Setter Property="Width" Value="Auto" />
+												</DataTrigger>
+												<DataTrigger Binding="{Binding ElementName=Dock1, Path=Height}" Value="NaN"   >
+													<Setter Property="Height" Value="Auto" />
+												</DataTrigger>
+											</Style.Triggers>
+										</Style>
+									</Grid.Style>
+								</Grid>
+								<Grid.RenderTransform>
+									<TransformGroup>
+										<SkewTransform AngleX="0" AngleY="0"/>
+										<RotateTransform Angle="0"/>
+										<TranslateTransform X="0" Y=" 0"/>
+									</TransformGroup>
+								</Grid.RenderTransform>
+									
+							</Grid>
+							<StackPanel.RenderTransform>
+								<TransformGroup>
+									<RotateTransform Angle="0" />
+									<ScaleTransform ScaleX="1" ScaleY="1" />
+									<SkewTransform  AngleX="0" AngleY="0" />
+								</TransformGroup>
+							</StackPanel.RenderTransform>
+								
+						</StackPanel>
+						<Grid.Style>
+							<Style TargetType="Grid" >
+								<Setter Property="Width" Value="{Binding ElementName=Stack1,Path=ActualWidth}" />
+								<Setter Property="Height" Value="{Binding ElementName=Stack1,Path=ActualHeight}" />
+								<Style.Triggers>
+									<DataTrigger Binding="{Binding ElementName=Stack1, Path=Width}" Value="NaN"   >
+										<Setter Property="Width" Value="Auto" />
+									</DataTrigger>
+									<DataTrigger Binding="{Binding ElementName=Stack1, Path=Height}" Value="NaN"   >
+										<Setter Property="Height" Value="Auto" />
+									</DataTrigger>
+								</Style.Triggers>
+							</Style>
+						</Grid.Style>
+					</Grid>
+					<Grid.RenderTransform>
+						<TransformGroup>
+							<SkewTransform AngleX="0" AngleY="0"/>
+							<RotateTransform Angle="0"/>
+							<TranslateTransform X="{Binding ElementName=Canvas,Path=ActualWidth,Converter={StaticResource ScalePropertyValueD},ConverterParameter=X;0;2560}" Y="{Binding ElementName=Canvas,Path=ActualHeight,Converter={StaticResource ScalePropertyValueD},ConverterParameter=Y;0;1440}" />
+						</TransformGroup>
+					</Grid.RenderTransform>
+						
+				</Grid>
+				<Grid.RenderTransform>
+					<TransformGroup>
+						<RotateTransform Angle="0" />
+						<ScaleTransform ScaleX="1" ScaleY="1" />
+						<SkewTransform  AngleX="0" AngleY="0" />
+					</TransformGroup>
+				</Grid.RenderTransform>
+					
+				<Grid.Style>
+					<Style TargetType="Grid" >
+						<Setter Property="Width" Value="{Binding ElementName=Grid1,Path=ActualWidth}" />
+						<Setter Property="Height" Value="{Binding ElementName=Grid1,Path=ActualHeight}" />
+						<Style.Triggers>
+							<DataTrigger Binding="{Binding ElementName=Grid1, Path=Width}" Value="NaN"   >
+								<Setter Property="Width" Value="Auto" />
+							</DataTrigger>
+							<DataTrigger Binding="{Binding ElementName=Grid1, Path=Height}" Value="NaN"   >
+								<Setter Property="Height" Value="Auto" />
+							</DataTrigger>
+						</Style.Triggers>
+					</Style>
+				</Grid.Style>
+			</Grid>
+			<Grid.RenderTransform>
+				<TransformGroup>
+					<SkewTransform AngleX="0" AngleY="0"/>
+					<RotateTransform Angle="0"/>
+					<TranslateTransform X="{Binding ElementName=Canvas,Path=ActualWidth,Converter={StaticResource ScalePropertyValueD},ConverterParameter=X;1024;2560}" Y="{Binding ElementName=Canvas,Path=ActualHeight,Converter={StaticResource ScalePropertyValueD},ConverterParameter=Y;1314.6666666666665;1440}" />
+				</TransformGroup>
+			</Grid.RenderTransform>
+				
+		</Grid>
+		<!-- Storyboards -->
+		<TextBlock Text="{Binding Path=NavigationStartedCounter, NotifyOnTargetUpdated=True}" Visibility="Collapsed">
+			<TextBlock.Triggers>
+				<EventTrigger RoutedEvent="Binding.TargetUpdated">
+					<BeginStoryboard x:Name="Grid1_SB1" HandoffBehavior="Compose">
+						<Storyboard AutoReverse="False" >
+							<DoubleAnimation Storyboard.TargetName="Grid1" Storyboard.TargetProperty="Opacity"
+								BeginTime="00:00:00" From="0" To="0" Duration="00:00:00">
+							</DoubleAnimation>
+						</Storyboard>
+					</BeginStoryboard>
+				</EventTrigger>
+			</TextBlock.Triggers>
+		</TextBlock>
+		<TextBlock Text="{Binding Path=ActivePlatform.Name, NotifyOnTargetUpdated=True}" Visibility="Collapsed">
+			<TextBlock.Triggers>
+				<EventTrigger RoutedEvent="Binding.TargetUpdated">
+					<BeginStoryboard x:Name="Grid1_SB2" HandoffBehavior="Compose">
+						<Storyboard AutoReverse="False" >
+							<DoubleAnimation Storyboard.TargetName="Grid1" Storyboard.TargetProperty="Opacity"
+								BeginTime="00:00:01.5" From="0" To="0.3" Duration="00:00:01.7">
+								<DoubleAnimation.EasingFunction>
+									<PowerEase EasingMode="EaseInOut"/>
+								</DoubleAnimation.EasingFunction>
+							</DoubleAnimation>
+						</Storyboard>
+					</BeginStoryboard>
+				</EventTrigger>
+			</TextBlock.Triggers>
+		</TextBlock>
+	</Canvas>
+</UserControl>
