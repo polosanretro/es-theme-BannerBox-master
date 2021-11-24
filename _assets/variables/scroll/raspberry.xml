@@ -1,0 +1,15 @@
+<theme>
+<formatVersion>7</formatVersion>
+<variables>
+
+<x.scroll.sound>raspberry</x.scroll.sound>
+
+</variables>
+
+<view name="system">
+      <carousel name="systemcarousel">
+	  <scrollSound>./_inc/sound/raspberry.wav</scrollSound>
+      </carousel> 
+</view> 
+	
+</theme>

@@ -1,0 +1,16 @@
+<theme>
+<formatVersion>7</formatVersion>
+<variables>
+
+<x.scroll.sound>reload</x.scroll.sound>
+
+</variables>
+
+<view name="system">
+      <carousel name="systemcarousel">
+	  <scrollSound>./_inc/sound/reload.wav</scrollSound>
+      </carousel> 
+</view> 
+	
+	
+</theme>

@@ -1,0 +1,17 @@
+<theme>
+<formatVersion>7</formatVersion>
+<variables>
+
+<x.scroll.sound>doom-punch</x.scroll.sound>
+
+<x.scroll.game.sound>doom-pistol</x.scroll.game.sound>
+
+</variables>
+
+<view name="system">
+      <carousel name="systemcarousel">
+	  <scrollSound>./_inc/sound/doom-punch.wav</scrollSound>
+      </carousel> 
+</view> 
+	
+</theme>
