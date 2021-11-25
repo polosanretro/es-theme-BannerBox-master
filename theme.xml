@@ -140,16 +140,16 @@ Videos:                 https://drive.google.com/drive/folders/1VrykKBljos4Sujrp
 
 
 <!-- Shader -->
-    <include subset="Shader" name="off">./art/sistemas/shader/off.xml</include>
-    <include subset="Shader" name="crt">./art/sistemas/shader/crt.xml</include>
-    <include subset="Shader" name="scanlines1">./art/sistemas/shader/scanlines.xml</include>
-    <include subset="Shader" name="scanlines2">./art/sistemas/shader/scanlines3.xml</include>
-    <include subset="Shader" name="scanlines3">./art/sistemas/shader/scanlines4.xml</include>
-    <include subset="Shader" name="scanlines4">./art/sistemas/shader/scanlines5.xml</include>
-    <include subset="Shader" name="scanlines5">./art/sistemas/shader/scanlines10.xml</include>
-    <include subset="Shader" name="éclairs">./art/sistemas/shader/tv_effect_glitch.xml</include>
-    <include subset="Shader" name="glitch">./art/sistemas/shader/tv_effect_glitch1.xml</include>
-    <include subset="Shader" name="vhs">./art/sistemas/shader/tv_effect_vhs_glitch.xml</include>
+    <include subset="Shader" name="off">./_art/sistemas/shader/off.xml</include>
+    <include subset="Shader" name="crt">./_art/sistemas/shader/crt.xml</include>
+    <include subset="Shader" name="scanlines1">./_art/sistemas/shader/scanlines.xml</include>
+    <include subset="Shader" name="scanlines2">./_art/sistemas/shader/scanlines3.xml</include>
+    <include subset="Shader" name="scanlines3">./_art/sistemas/shader/scanlines4.xml</include>
+    <include subset="Shader" name="scanlines4">./_art/sistemas/shader/scanlines5.xml</include>
+    <include subset="Shader" name="scanlines5">./_art/sistemas/shader/scanlines10.xml</include>
+    <include subset="Shader" name="éclairs">./_art/sistemas/shader/tv_effect_glitch.xml</include>
+    <include subset="Shader" name="glitch">./_art/sistemas/shader/tv_effect_glitch1.xml</include>
+    <include subset="Shader" name="vhs">./_art/sistemas/shader/tv_effect_vhs_glitch.xml</include>
 
 
 
@@ -172,14 +172,7 @@ Videos:                 https://drive.google.com/drive/folders/1VrykKBljos4Sujrp
 	<include>./_inc/views/Tiles.xml</include>
 	<include>./_inc/views/Tiles + Video.xml</include>
 	<include>./_inc/views/Icons.xml</include>
-	<include>./_inc/views/Colorful (vertically).xml</include>
-	<include>./_inc/views/Colorful + Gamelist (vertically).xml</include>
-	<include>./_inc/views/Colorful + Wheel Left (vertically).xml</include>
-	<include>./_inc/views/Colorful + Wheel Right (vertically).xml</include>
-	<include>./_inc/views/Colorful (horizontally).xml</include>
-	<include>./_inc/views/Colorful + Gamelist (horizontally).xml</include>
-	<include>./_inc/views/Colorful + Wheel Left (horizontally).xml</include>
-	<include>./_inc/views/Colorful + Wheel Right (horizontally).xml</include>
+
 
 <!-- Reglage -->
 	<include>./_inc/presets/${system.theme}.xml</include> 
@@ -584,9 +577,9 @@ Videos:                 https://drive.google.com/drive/folders/1VrykKBljos4Sujrp
 		<include name="xbox" displayName="${xboxbuttons}">./_inc/help/xboxbuttons.xml</include>
 		<include name="psx" displayName="${psxbuttons}">./_inc/help/psxbuttons.xml</include>
                 <include name="switch" displayName="${switchbuttons}">./art/sistemas/NX-master/iconsets/switch.xml</include>
-                <include name="ps1" displayName="${ps1buttons}">./art/sistemas/NX-master/iconsets/ps1.xml</include>
-                <include name="snes" displayName="${snesbuttons}">./art/sistemas/NX-master/iconsets/snes.xml</include>
-                <include name="xboxone" displayName="${xboxonebuttons}">./art/sistemas/NX-master/iconsets/xboxone.xml</include>
+                <include name="ps1" displayName="${ps1buttons}">./_art/sistemas/NX-master/iconsets/ps1.xml</include>
+                <include name="snes" displayName="${snesbuttons}">./_art/sistemas/NX-master/iconsets/snes.xml</include>
+                <include name="xboxone" displayName="${xboxonebuttons}">./_art/sistemas/NX-master/iconsets/xboxone.xml</include>
 		<include name="standard" displayName="${stbuttons}">./_inc/help/default.xml</include>
 	</subset>
 
