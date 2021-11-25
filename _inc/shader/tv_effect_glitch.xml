@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<theme>
+  <formatVersion>7</formatVersion>
+   
+
+
+	<view name="system, basic, detailed, video, grid">
+
+      <video name="mod_tv_effect" extra="true">
+        <path>./effect_glitch.mp4</path>
+        <color>A0A0A025</color>
+	    <zIndex>990</zIndex>
+	    <size>1 1</size>
+      </video>
+	
+	</view>
+   
+</theme>
