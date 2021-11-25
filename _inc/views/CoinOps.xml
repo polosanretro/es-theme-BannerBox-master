@@ -318,8 +318,8 @@
 <origin>0.5 0.5</origin>
 <size>0.055 0.155</size>
 <color>ffffffA6</color>
-<path>./art/sistemas/pointer/default.png</path>
-<path>./_inc/pointer/${system.theme}.png</path>
+<path>./_art/sistemas/pointer/default.png</path>
+<path>./_art/pointer/${system.theme}.png</path>
 <zIndex>999</zIndex> 
 <storyboard repeat="forever">
 <animation property="x" from="0.963" to="0.940" duration="60" autoreverse="true" begin="4000" repeat="3"/>
