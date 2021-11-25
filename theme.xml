@@ -22,15 +22,6 @@ Videos:                 https://drive.google.com/drive/folders/1VrykKBljos4Sujrp
 
 	<variables>
 		<helpSubsetName>Buttons icons</helpSubsetName>
-		<helpbuttons>Button</helpbuttons>
-		<arcadesIcons>Arcades</arcadesIcons>
-		<xboxbuttons>XBOX</xboxbuttons>
-		<snesbuttons>Super Nintendo</snesbuttons>
-		<xboxonebuttons>XBOX one</xboxonebuttons>
-		<psxbuttons>PlayStation</psxbuttons>
-		<ps1buttons>PlayStation 1</ps1buttons>
-		<switchbuttons>Switch</switchbuttons>
-		<stbuttons>Standard</stbuttons>
 		<gameCarouselViewName>Detailed + Carousel</gameCarouselViewName>
 	</variables>
 	
@@ -140,16 +131,16 @@ Videos:                 https://drive.google.com/drive/folders/1VrykKBljos4Sujrp
 
 
 <!-- Shader -->
-    <include subset="Shader" name="off">./_art/sistemas/shader/off.xml</include>
-    <include subset="Shader" name="crt">./_art/sistemas/shader/crt.xml</include>
-    <include subset="Shader" name="scanlines1">./_art/sistemas/shader/scanlines.xml</include>
-    <include subset="Shader" name="scanlines2">./_art/sistemas/shader/scanlines3.xml</include>
-    <include subset="Shader" name="scanlines3">./_art/sistemas/shader/scanlines4.xml</include>
-    <include subset="Shader" name="scanlines4">./_art/sistemas/shader/scanlines5.xml</include>
-    <include subset="Shader" name="scanlines5">./_art/sistemas/shader/scanlines10.xml</include>
-    <include subset="Shader" name="éclairs">./_art/sistemas/shader/tv_effect_glitch.xml</include>
-    <include subset="Shader" name="glitch">./_art/sistemas/shader/tv_effect_glitch1.xml</include>
-    <include subset="Shader" name="vhs">./_art/sistemas/shader/tv_effect_vhs_glitch.xml</include>
+    <include subset="Shader" name="off">./_inc/shader/off.xml</include>
+    <include subset="Shader" name="crt">./_inc/shader/crt.xml</include>
+    <include subset="Shader" name="scanlines1">./_inc/shader/scanlines.xml</include>
+    <include subset="Shader" name="scanlines2">./_inc/shader/scanlines3.xml</include>
+    <include subset="Shader" name="scanlines3">./_inc/shader/scanlines4.xml</include>
+    <include subset="Shader" name="scanlines4">./_inc/shader/scanlines5.xml</include>
+    <include subset="Shader" name="scanlines5">./_inc/scanlines10.xml</include>
+    <include subset="Shader" name="éclairs">./_inc//shader/tv_effect_glitch.xml</include>
+    <include subset="Shader" name="glitch">./_inc//shader/tv_effect_glitch1.xml</include>
+    <include subset="Shader" name="vhs">./_inc/shader/tv_effect_vhs_glitch.xml</include>
 
 
 
@@ -572,15 +563,15 @@ Videos:                 https://drive.google.com/drive/folders/1VrykKBljos4Sujrp
 
 <!-- Icons -->
 	<subset name="helpsystem" displayName="${helpSubsetName}">
-		<include name="buttons" displayName="${helpbuttons}">./_inc/help/buttons.xml</include>
-                <include name="arcadeIcons" displayName="${arcadeIcons}">./_assets/xml/help1.xml </include>
-		<include name="xbox" displayName="${xboxbuttons}">./art/sistemas/master/iconsets/xboxbuttons.xml</include>
-		<include name="psx" displayName="${psxbuttons}">./art/sistemas/master/iconsets//psxbuttons.xml</include>
-                <include name="switch" displayName="${switchbuttons}">./art/sistemas/master/iconsets/switch.xml</include>
-                <include name="ps1" displayName="${ps1buttons}">./_art/sistemas/master/iconsets/ps1.xml</include>
-                <include name="snes" displayName="${snesbuttons}">./_art/sistemas/master/iconsets/snes.xml</include>
-                <include name="xboxone" displayName="${xboxonebuttons}">./_art/sistemas/master/iconsets/xboxone.xml</include>
-		<include name="standard" displayName="${stbuttons}">./_inc/help/default.xml</include>
+		<include name="buttons">./_inc/help/buttons.xml</include>
+                <include name="arcadeIcons">./_assets/xml/help1.xml </include>
+		<include name="xbox">./_inc/help/xbox.xml</include>
+		<include name="psx">./_inc/help/psx.xml</include>
+                <include name="switch">./_inc/help/switch.xml</include>
+                <include name="ps1">./_inc/help/ps1.xml</include>
+                <include name="snes">./_inc/help/snes.xml</include>
+                <include name="xboxone">./_inc/help/xboxone.xml</include>
+		<include name="standard">./_inc/help/default.xml</include>
 	</subset>
 
 <!-- Views Gamelist -->
