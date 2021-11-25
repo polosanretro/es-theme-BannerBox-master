@@ -574,8 +574,8 @@ Videos:                 https://drive.google.com/drive/folders/1VrykKBljos4Sujrp
 	<subset name="helpsystem" displayName="${helpSubsetName}">
 		<include name="buttons" displayName="${helpbuttons}">./_inc/help/buttons.xml</include>
                 <include name="arcadeIcons" displayName="${arcadeIcons}">./_assets/xml/help1.xml </include>
-		<include name="xbox" displayName="${xboxbuttons}">./_inc/help/xboxbuttons.xml</include>
-		<include name="psx" displayName="${psxbuttons}">./_inc/help/psxbuttons.xml</include>
+		<include name="xbox" displayName="${xboxbuttons}">./art/sistemas/master/iconsets/xboxbuttons.xml</include>
+		<include name="psx" displayName="${psxbuttons}">./art/sistemas/master/iconsets//psxbuttons.xml</include>
                 <include name="switch" displayName="${switchbuttons}">./art/sistemas/master/iconsets/switch.xml</include>
                 <include name="ps1" displayName="${ps1buttons}">./_art/sistemas/master/iconsets/ps1.xml</include>
                 <include name="snes" displayName="${snesbuttons}">./_art/sistemas/master/iconsets/snes.xml</include>
