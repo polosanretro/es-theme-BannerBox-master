@@ -576,10 +576,10 @@ Videos:                 https://drive.google.com/drive/folders/1VrykKBljos4Sujrp
                 <include name="arcadeIcons" displayName="${arcadeIcons}">./_assets/xml/help1.xml </include>
 		<include name="xbox" displayName="${xboxbuttons}">./_inc/help/xboxbuttons.xml</include>
 		<include name="psx" displayName="${psxbuttons}">./_inc/help/psxbuttons.xml</include>
-                <include name="switch" displayName="${switchbuttons}">./art/sistemas/NX-master/iconsets/switch.xml</include>
-                <include name="ps1" displayName="${ps1buttons}">./_art/sistemas/NX-master/iconsets/ps1.xml</include>
-                <include name="snes" displayName="${snesbuttons}">./_art/sistemas/NX-master/iconsets/snes.xml</include>
-                <include name="xboxone" displayName="${xboxonebuttons}">./_art/sistemas/NX-master/iconsets/xboxone.xml</include>
+                <include name="switch" displayName="${switchbuttons}">./art/sistemas/master/iconsets/switch.xml</include>
+                <include name="ps1" displayName="${ps1buttons}">./_art/sistemas/master/iconsets/ps1.xml</include>
+                <include name="snes" displayName="${snesbuttons}">./_art/sistemas/master/iconsets/snes.xml</include>
+                <include name="xboxone" displayName="${xboxonebuttons}">./_art/sistemas/master/iconsets/xboxone.xml</include>
 		<include name="standard" displayName="${stbuttons}">./_inc/help/default.xml</include>
 	</subset>
 
