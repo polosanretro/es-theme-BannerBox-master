@@ -1,0 +1,15 @@
+<theme>
+<formatVersion>7</formatVersion>
+<variables>
+
+<x.scroll.sound>kouak</x.scroll.sound>
+
+</variables>
+
+<view name="system">
+      <carousel name="systemcarousel">
+	  <scrollSound>./_inc/sound/kouak.wav</scrollSound>
+      </carousel> 
+</view> 
+	
+</theme>

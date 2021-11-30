@@ -1,0 +1,16 @@
+<theme>
+<formatVersion>7</formatVersion>
+<variables>
+
+<x.scroll.sound>keyboard</x.scroll.sound>
+
+</variables>
+
+<view name="system">
+      <carousel name="systemcarousel">
+	  <scrollSound>./_inc/sound/keyboard.wav</scrollSound>
+      </carousel> 
+</view> 
+	
+	
+</theme>

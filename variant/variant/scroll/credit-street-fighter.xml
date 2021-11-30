@@ -1,0 +1,17 @@
+<theme>
+<formatVersion>7</formatVersion>
+<variables>
+
+<x.scroll.sound>credit-street-fighter</x.scroll.sound>
+
+<x.scroll.game.sound>ryuken-hadooken</x.scroll.game.sound>
+
+</variables>
+
+<view name="system">
+      <carousel name="systemcarousel">
+	  <scrollSound>./_inc/sound/credit-street-fighter.wav</scrollSound>
+      </carousel> 
+</view> 
+	
+</theme>

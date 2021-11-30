@@ -1,0 +1,18 @@
+<theme>
+<formatVersion>7</formatVersion>
+<variables>
+
+<x.scroll.sound>yoshi</x.scroll.sound>
+
+<x.scroll.game.sound>yoshi-gloups</x.scroll.game.sound>
+
+</variables>
+
+<view name="system">
+      <carousel name="systemcarousel">
+	  <scrollSound>./_inc/sound/yoshi.wav</scrollSound>
+      </carousel> 
+</view> 
+	
+	
+</theme>

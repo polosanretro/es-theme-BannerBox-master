@@ -1,0 +1,14 @@
+<theme>
+<formatVersion>7</formatVersion>
+
+	<view name="system">
+
+<sound name="bgsound">
+<path>./../../../${system.theme}/sounds/system.ogg</path>
+</sound>
+
+</view>
+
+
+	
+</theme>
