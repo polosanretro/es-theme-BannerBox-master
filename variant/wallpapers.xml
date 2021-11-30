@@ -1,0 +1,55 @@
+<theme>
+<formatVersion>7</formatVersion>
+
+
+
+
+	<view name="system">
+
+<image name="cadre2" extra="true">
+<linearSmooth>true</linearSmooth>
+<path>./media/Banner/cadre.png</path>
+<zIndex>10084</zIndex>
+<size>0.355 0.4005</size>
+<origin>0.5 0.5</origin>
+<pos>0.8366 0.458</pos>
+<color>10357a</color>
+</image>
+
+
+<image name="blank2" extra="true">
+<linearSmooth>true</linearSmooth>
+<path>./media/blank0.png</path>
+<zIndex>10078</zIndex>
+<maxSize>0.300 0.335</maxSize>
+<origin>0.5 0.5</origin>
+<pos>0.8346 0.455</pos>
+</image>
+
+
+		<image name="fondi" extra="true">
+                       <default>./media/images/default.png</default>
+			<path>./media/images/fondwall/${system.theme}.png</path>
+                        <linearSmooth>true</linearSmooth>
+			<zIndex>10080</zIndex>
+			<origin>0.5 0.5</origin>
+			<pos>0.8335 0.4536</pos>
+			<maxSize>0.300 0.325</maxSize>
+		</image>
+
+
+		<image name="screen2" extra="true">
+			<origin>0.5 0.5</origin>
+			<pos>0.8340 0.45862</pos>
+			<maxSize>0.292 0.484</maxSize>
+			<path>./variant/glass1.png</path>
+			<zIndex>10082</zIndex>
+		</image>
+
+
+	</view>
+
+
+
+
+</theme>

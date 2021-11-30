@@ -1,0 +1,17 @@
+<theme>
+<formatVersion>7</formatVersion>
+
+
+
+
+	<view name="system">
+
+
+	  <image name="char" extra="true">
+ 	<visible>true</visible>
+	  </image>
+
+
+</view>
+
+</theme>
