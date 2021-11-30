@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<theme>
+<formatVersion>7</formatVersion>
+
+<view name="system,basic,detailed,video,gamecarousel,grid">
+	
+<helpsystem name="help">
+<textColor>090909</textColor>
+<fontSize>0.02</fontSize>
+<origin>0 1</origin>
+<pos>0.004 0.99</pos>
+<fontPath>./_assets/Staatliches-Regular.ttf</fontPath>
+<textColor>dddddd</textColor>
+<iconColor>dddddd</iconColor>
+</helpsystem>
+
+<helpsystem name="help" ifSubset="helpIcons:arcadeIcons">
+<iconColor>ffffff</iconColor>
+<iconUpDown>./_assets/icons/icon_arcade_updown.png</iconUpDown>
+<iconLeftRight>./_assets/icons/icon_arcade_leftright.png</iconLeftRight>
+<iconUpDownLeftRight>./_assets/icons/icon_arcade_all.png</iconUpDownLeftRight>
+<iconA>./_assets/icons/icon_arcade_a.png</iconA>
+<iconB>./_assets/icons/icon_arcade_b.png</iconB>
+<iconX>./_assets/icons/icon_arcade_x.png</iconX>
+<iconY>./_assets/icons/icon_arcade_y.png</iconY>
+<iconL>./_assets/icons/icon_arcade_l.png</iconL>
+<iconR>./_assets/icons/icon_arcade_r.png</iconR>
+<iconStart>./_assets/icons/icon_arcade_start.png</iconStart>
+<iconSelect>./_assets/icons/icon_arcade_select.png</iconSelect>
+</helpsystem>
+
+
+</view>
+
+</theme>
