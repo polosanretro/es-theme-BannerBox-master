@@ -36,7 +36,7 @@ Videos:                 https://drive.google.com/drive/folders/1VrykKBljos4Sujrp
 		<subset.scrollSound>Son defilement de la Roue</subset.scrollSound>
 		<subset.scrollGame>Son defilement Liste des Jeux</subset.scrollGame>
                 <subset.charbackground>Sans perso background</subset.charbackground>
-                <subset.backgrounds-anim>cinematiques ou wallpapers</subset.backgrounds-anim>
+                <subset.cinematicWallpapers>cinematiques ou wallpapers</subset.cinematicWallpapers>
 		<blue>Bleu</blue>
 		<red>Rouge</red>
 		<green>Vert</green>
@@ -157,9 +157,9 @@ Videos:                 https://drive.google.com/drive/folders/1VrykKBljos4Sujrp
 
 
 
-<!-- Background -->
-    <include subset="backgrounds-anim" name="cinematics">./variant/cinematics.xml</include>
-    <include subset="banckgrouds-anim" name="wallpapers">./variant/wallpapers.xml</include>
+<!-- Cine -->
+    <include subset="cinematicWallpapers" name="cinematics">./variant/cinematiques.xml</include>
+    <include subset="cinematicWallpapers" name="wallpapers">./variant/wallpapers.xml</include>
 
 
 
