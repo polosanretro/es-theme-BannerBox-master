@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<theme>
+
+	<formatVersion>7</formatVersion>
+
+	<view name="system">
+
+    <video name="staticBackgroundVideo">
+	
+		<path>./../sonores/streetfighter.mp4</path>
+		<pos>2 2</pos>
+		<size>0 0</size>
+		<delay>0</delay>
+	
+	</video>
+	
+	</view>
+	
+	<view name="system,basic,detailed,video,grid,gamecarousel">
+
+    <video name="sonores" extra="true">
+	
+		<path>./../sonores/streetfighter.mp4</path>
+		<pos>2 2</pos>
+		<size>0 0</size>
+		<delay>0</delay>
+	
+	</video>
+
+	</view>
+
+</theme>
