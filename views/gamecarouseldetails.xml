@@ -33,6 +33,7 @@
 </gamecarousel> 
 
 <video name="md_video">
+<path>{random}</path>
 <default>./media/noise.mp4</default>
 <pos>0.2815 0.55</pos>
 <size>0.3958 0.48</size>

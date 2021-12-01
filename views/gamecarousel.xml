@@ -3,6 +3,8 @@
 <theme>
 <formatVersion>7</formatVersion>
 
+<include>./media/script/${system.theme}.xml</include>
+
 <view name="gamecarousel">
 
 
@@ -24,6 +26,7 @@
 </gamecarousel> 
 
 <video name="md_video">
+<path>{random}</path>
 <default>./media/noise.mp4</default>
 <pos>0.2815 0.55</pos>
 <size>0.3958 0.48</size>
@@ -110,7 +113,7 @@
 		<image name="logo, logo1">
                      <pos>0.925 0</pos>
                     <size>0.150 1.09</size>
-        <path>./media/Banner/banner.png</path>
+       <path>./media/Banner/banner.png</path>
 	<path>./media/Banner/${system.theme}.png</path>
 			<linearSmooth>true</linearSmooth>
 			<zIndex>1099</zIndex>
