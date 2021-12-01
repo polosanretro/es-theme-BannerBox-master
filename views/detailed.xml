@@ -108,6 +108,7 @@
       </image> 
 
     <video name="md_video">
+      <path>{random}</path>
       <pos>0.76 0.408</pos>
       <maxSize>0.46 0.436</maxSize>
       <origin>0.5 0.5</origin>
