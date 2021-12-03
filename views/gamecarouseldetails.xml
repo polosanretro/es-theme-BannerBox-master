@@ -5,24 +5,24 @@
 
 	<customView name="gamecarouseldetails" inherits="gamecarousel">		
 
-<text name="logoText">
-<visible>false</visible>
-		</text>
 
-		<image name="logo">
-<visible>false</visible>
-		</image>
-
+	  <image name="fond" extra="true">
+    <origin>0 0</origin>
+    <pos>0 0</pos>
+    <size>1 1</size>
+	<path>./media/fondperso/backgroundsalon.png</path>
+    <zIndex>996</zIndex> 
+    </image> 
 
 
 
 <gamecarousel name="gamecarousel">
 <zIndex>1002</zIndex>	      
 <type>vertical_wheel</type>
-<pos>0.31 0</pos>
+<pos>0.314 0</pos>
 <size>1 1</size>
 <logoScale>1.45</logoScale>
-<logoSize>0.150 0.260</logoSize>
+<logoSize>0.100 0.200</logoSize>
 <color>00000000</color>
 <maxLogoCount>30</maxLogoCount>
 <logoRotation>-8</logoRotation>
@@ -35,8 +35,8 @@
 <video name="md_video">
 <path>{random}</path>
 <default>./media/noise.mp4</default>
-<pos>0.2815 0.55</pos>
-<size>0.3958 0.48</size>
+<pos>0.3650 0.398</pos>
+<size>0.263 0.29</size>
 <origin>0.5 0.5</origin>
 <delay>0</delay>
 <showSnapshotNoVideo>false</showSnapshotNoVideo>
@@ -44,13 +44,10 @@
 <zIndex>998</zIndex>
 </video>
 
-		<image name="logo, logo1">
-<visible>false</visible>
-		</image>
 
 
 <image name="pointer" extra="true">
-<pos>0.97 0.50</pos>
+<pos>0.974 0.50</pos>
 <origin>0.5 0.5</origin>
 <size>0.055 0.155</size>
 <color>ffffffA6</color>
@@ -63,50 +60,81 @@
 </image>
 
 
-	  <image name="wallpaper" extra="true">
-    <origin>0 0</origin>
-    <pos>0.1 0</pos>
-    <size>1 1</size>
-	<path>./menu-art/wallpapers/${system.theme}.jpg</path>
-    <zIndex>995</zIndex> 
-    </image> 
+
+		<image name="gauche" extra="true">
+			<origin>0 0</origin>
+                        <pos>0.533 0.060</pos>
+			<maxSize>0.042 0.022</maxSize>
+			<path>./media/Banner/gauche.png</path>
+                <rotation>-5</rotation> 
+			<zIndex>2005</zIndex>
+		</image> 
 
 
-
-	  <image name="mask2" extra="true">
-    <origin>0 0</origin>
-<pos>0 0</pos>
-    <size>1 1</size>
-	<path>./media/bartop1.png</path>
-    <zIndex>997</zIndex> 
-    </image> 
-
-	  <image name="mask3" extra="true">
-    <origin>0 0</origin>
-    <pos>0 0</pos>
-    <size>1 1</size>
-	<path>./media/mask.png</path>
-    <zIndex>996</zIndex> 
-    </image> 
-
- 
-
-		
-  <image name="fonds" extra="true">
-    <origin>0 0</origin>
-    <pos>0 0</pos>
-    <size>1 1</size>
-	<path>./media/bartop/default.png</path>
-	<path>./media/bartop/${system.theme}.png</path>
-    <zIndex>999</zIndex> 
-    </image> 
+		<image name="droite" extra="true">
+			<origin>0 0</origin>
+                        <pos>0.840 0.024</pos>
+			<maxSize>0.042 0.022</maxSize>
+			<path>./media/Banner/droite.png</path>
+                <rotation>-5</rotation> 
+			<zIndex>2005</zIndex> 
+		</image>
 
 
-      <image name="md_thumbnail">
-         <pos>0.960 0.873</pos>
-         <size>0.056 0</size>
-         <zIndex>1999</zIndex>
-      </image>
+               <image name="select" extra="true">
+                 <pos>0.153 0.841</pos>
+		<color>1B1817</color>
+			<path>./media/Banner/select.png</path>
+			<maxSize>0.0735 0.1</maxSize>
+                <rotation>4</rotation> 
+              <zIndex>2350</zIndex>	     
+              </image>
+
+               <image name="retour" extra="true">
+                <pos>0.355 0.87</pos>
+		  <color>1B1817</color>
+			<path>./media/Banner/return.png</path>
+			<maxSize>0.0800 0.1</maxSize>
+                <rotation>4</rotation> 
+               <zIndex>2350</zIndex>	     
+               </image>
+
+		<image name="bouton" extra="true">
+			<origin>0 0</origin>
+                        <pos>0.228 0.8462</pos>
+			<maxSize>0.040 0.040</maxSize>
+			<path>./media/Banner/icon_snes_a.png</path>
+                <rotation>4</rotation> 
+			<zIndex>2350</zIndex> 
+		</image>
+
+		<image name="bouton2" extra="true">
+			<origin>0 0</origin>
+                        <pos>0.439 0.87</pos>
+			<maxSize>0.040 0.040</maxSize>
+			<path>./media/Banner/icon_snes_b.png</path>
+                <rotation>4</rotation> 
+			<zIndex>2350</zIndex> 
+		</image>
+
+ 	  <image name="background4" extra="true">
+         <origin>0 0</origin>
+         <pos>0 0</pos>
+         <size>1 1</size>        
+         <path>./media/Banner/topbar.png</path>
+		<color>ffffff</color>
+         <zIndex>2000</zIndex>          
+      </image> 
+
+
+	  <image name="background5" extra="true">
+         <origin>0 0</origin>
+         <pos>0 0</pos>
+         <size>1 1</size>        
+         <path>./media/Banner/bottombar.png</path>
+		<color>ffffff</color>
+         <zIndex>2000</zIndex>          
+      </image> 
 
       <text name="md_name">
       <pos>0.60 0.020</pos>
@@ -123,16 +151,81 @@
       </text>
 
       <text name="md_description">
-         <pos>0.61 0.85</pos>
-         <size>0.28 0.100</size>
+         <pos>0.035 0.33</pos>
+         <size>0.175 0.20</size>
          <fontSize>0.020</fontSize>
          <color>FFFFFF</color>
          <glowColor>00000016</glowColor>
          <glowSize>1</glowSize>
          <alignment>left</alignment>
-         <zIndex>1999</zIndex>
+         <zIndex>999</zIndex>
          <fontPath>./media/images/Circular Std Book.ttf</fontPath>
       </text>
+
+	  <image name="logos" extra="true">
+		<pos>0.05 0.15</pos>
+            <maxSize>0.112 0.112</maxSize>
+		<color>ffffff</color>   
+		<path>./media/logos/${system.theme}.png</path>
+		<path>./media/logos/${system.theme}.svg</path>
+		<zIndex>999</zIndex>
+	  </image>
+
+
+
+		<rating name="md_rating">
+                <pos>0.290 0.854</pos>
+			<size>0.05 0.03</size>
+			<color>666666</color>
+			<origin>0.5 0</origin>
+			<horizontalAlignment>left</horizontalAlignment>
+			<unfilledColor>80808030</unfilledColor>
+			<unfilledPath>./media/images/star_filled.png</unfilledPath>
+                        <rotation>4</rotation>
+			<zIndex>9002</zIndex>
+		</rating>
+
+	  <image name="char1" extra="true">
+		<pos>0.6102 0.11</pos>
+            <maxSize>0.112 0.112</maxSize>
+		<color>ffffff</color>   
+		<path>./media/char-system/${system.theme}/char.png</path>
+		<zIndex>1995</zIndex>
+	  </image>
+
+	<image name="console" extra="true">	
+		<path>./media/consoles/default_console.png</path>
+		<path>./media/consoles/${system.theme}.png</path>
+                <origin>0 0</origin>
+		<color>FFFFFF</color>
+                <pos>0.601 0.78</pos>
+                <maxSize>0.13 0.13</maxSize>
+		<zIndex>2001</zIndex>
+		<visible>true</visible>
+	</image>
+
+
+	<image name="char2" extra="true">	
+		<path>./media/fondperso/vretour.png</path>
+                <origin>0 0</origin>
+		<color>FFFFFF</color>
+                <pos>0.170 0.6382</pos>
+                <maxSize>0.04 0.04</maxSize>
+		<zIndex>2001</zIndex>
+	</image>
+
+
+	<image name="tableau" extra="true">	
+		<path>./media/wallpapers/${system.theme}.jpg</path>
+                <origin>0 0</origin>
+		<color>FFFFFF</color>
+                <pos>0.535 0.318</pos>
+                <maxSize>0.176 0.176</maxSize>
+		<zIndex>995</zIndex>
+	</image>
+			
+
+ 
 
 	
       <imagegrid name="gamegrid">
@@ -148,27 +241,20 @@
          <zIndex>1999</zIndex>
       </imagegrid>
 	  
-      <image name="bas" extra="true">
-         <path>./media/images/blackbas.png</path>
-         <origin>0 0</origin>
-         <pos>0 0.57</pos>
-         <size>1 0.5</size>
-         <zIndex>1997</zIndex>
-      </image>
 
       <image name="md_marquee">
-         <pos>0.285 0.05</pos>
+         <pos>0.372 0.18</pos>
          <maxSize>0.20 0.09</maxSize>
-         <zIndex>0</zIndex>
+         <zIndex>997</zIndex>
       </image>
 
 
 <image name="md_flag">
 <origin>0.5 1</origin>
-<pos>0.620 0.83</pos>
+<pos>0.05 0.29</pos>
 <maxSize>0.022 0.05</maxSize>
 <linearSmooth>true</linearSmooth>
-<zIndex>9001</zIndex>
+<zIndex>997</zIndex>
 <reflexion>0.1 0</reflexion>
 </image>
 
@@ -178,10 +264,10 @@
 <size>0.14 0.03</size>
 <origin>1 0.5</origin>
 <alignment>right</alignment>
-<pos>0.705 0.81</pos>
+<pos>0.120 0.29</pos>
 <color>dddddd</color>
 <fontPath>./variant/bar_anim/Nunito-SemiBold.ttf</fontPath>
-<zIndex>9001</zIndex>
+<zIndex>997</zIndex>
 </datetime>
 
 
@@ -190,23 +276,18 @@
 <size>0.12 0.03</size>
 <origin>0 0.5</origin>
 <alignment>left</alignment>
-<pos>0.712 0.81</pos>
+<pos>0.0512 0.308</pos>
 <color>dddddd</color>
 <fontPath>./variant/bar_anim/Nunito-SemiBold.ttf</fontPath>
-<zIndex>9001</zIndex>
+<zIndex>997</zIndex>
 </text>
 
-		<rating name="md_rating">
-                <pos>0.290 0.854</pos>
-			<size>0.05 0.03</size>
-			<color>666666</color>
-			<origin>0.5 0</origin>
-			<horizontalAlignment>left</horizontalAlignment>
-			<unfilledColor>80808030</unfilledColor>
-			<unfilledPath>./media/images/star_filled.png</unfilledPath>
-                        <rotation>4</rotation>
-			<zIndex>9002</zIndex>
-		</rating>
+      <image name="md_fanart" extra="true">
+         <pos>0.07 0.7</pos>
+         <size>0.0999 0.270</size>
+         <zIndex>997</zIndex>
+      </image>
+
 
 
 
