@@ -196,25 +196,14 @@
 	  </image>
 
 	<image name="console" extra="true">	
-		<path>./media/consoles/default_console.png</path>
 		<path>./media/consoles/${system.theme}.png</path>
                 <origin>0 0</origin>
 		<color>FFFFFF</color>
                 <pos>0.601 0.78</pos>
                 <maxSize>0.13 0.13</maxSize>
 		<zIndex>2001</zIndex>
-		<visible>true</visible>
 	</image>
 
-
-	<image name="char2" extra="true">	
-		<path>./media/fondperso/vretour.png</path>
-                <origin>0 0</origin>
-		<color>FFFFFF</color>
-                <pos>0.170 0.6382</pos>
-                <maxSize>0.04 0.04</maxSize>
-		<zIndex>2001</zIndex>
-	</image>
 
 
 	<image name="tableau" extra="true">	
