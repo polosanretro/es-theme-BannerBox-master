@@ -3,7 +3,7 @@
 <theme>
 <formatVersion>7</formatVersion>
 
-	<view name="detailed">
+	<view name="detailed">	
 
 		<image name="gauche" extra="true">
 			<origin>0 0</origin>
@@ -14,12 +14,6 @@
 			<zIndex>20040</zIndex>
 		</image> 
 
-		<image name="md_marquee">
-                <pos>0.685 0.056</pos>
-                <maxSize>0.12 0.04</maxSize>
-                <rotation>-4</rotation> 
-                <zIndex>10089</zIndex>
-		</image>
 
 		<image name="droite" extra="true">
 			<origin>0 0</origin>
@@ -30,14 +24,6 @@
 			<zIndex>20040</zIndex> 
 		</image>
 
-		<image name="logo, logo1">
-                     <pos>0.075 0.07</pos>
-                    <size>0.150 0.850</size>
-        <path>./media/Banner/banner.png</path>
-	<path>./media/Banner/${system.theme}.png</path>
-			<linearSmooth>true</linearSmooth>
-			<zIndex>80</zIndex>
-		</image>
 
 		<rating name="md_rating">
                 <pos>0.290 0.854</pos>
@@ -50,6 +36,22 @@
                         <rotation>4</rotation>
 			<zIndex>350</zIndex>
 		</rating>
+
+
+
+    <video name="md_video">
+<path>{random}</path>
+      <pos>0.82 0.67</pos>
+      <maxSize>0.20 0.40</maxSize>
+      <origin>0.5 0.5</origin>
+      <delay>0.3</delay>
+      <showSnapshotNoVideo>false</showSnapshotNoVideo>
+      <showSnapshotDelay>false</showSnapshotDelay>
+      <loops>1</loops>
+      <roundCorners>0.02</roundCorners>
+      <zIndex>29</zIndex>
+<default>./media/noise.mp4</default>
+    </video>
 
                <image name="select" extra="true">
                  <pos>0.153 0.841</pos>
@@ -105,28 +107,17 @@
          <path>./media/Banner/bottombar.png</path>
 		<color>ffffff</color>
          <zIndex>200</zIndex>          
-      </image> 
+      </image>
 
-    <video name="md_video">
-      <path>{random}</path>
-      <pos>0.76 0.408</pos>
-      <maxSize>0.46 0.436</maxSize>
-      <origin>0.5 0.5</origin>
-      <delay>1.4</delay>
-      <showSnapshotNoVideo>true</showSnapshotNoVideo>
-      <showSnapshotDelay>true</showSnapshotDelay>
-      <loops>1</loops>
-      <roundCorners>0.02</roundCorners>
-      <zIndex>30</zIndex>
-<default>./media/noise.mp4</default>
-    </video>
 
     <image name="background">
+<linearSmooth>true</linearSmooth>
+      <origin>0 0</origin>
       <size>1 1</size>
       <pos>0 0</pos>
-      <origin>0 0</origin>
-         <path>./media/images/fond1.png</path>
-      <zIndex>10</zIndex>
+         <path>./media/fondperso/default.png</path>
+         <path>./media/fondperso/${system.theme}.png</path>
+      <zIndex>30</zIndex>
     </image>
 
     <image name="background00">
@@ -134,7 +125,7 @@
       <pos>0 0</pos>
       <origin>0 0</origin>
          <path>./media/mask.png</path>
-      <zIndex>12</zIndex>
+      <zIndex>14</zIndex>
     </image>
 
     <image name="background0">
@@ -142,7 +133,7 @@
       <pos>0 0</pos>
       <origin>0 0</origin>
          <path>./media/fade.png</path>
-      <zIndex>11</zIndex>
+      <zIndex>14</zIndex>
     </image>
 
     <image name="backgr">
@@ -150,7 +141,7 @@
       <pos>0 0</pos>
       <origin>0 0</origin>
          <path>./media/bartop2.png</path>
-      <zIndex>13</zIndex>
+      <zIndex>15</zIndex>
     </image>
 
     <image name="details0" extra="true">
@@ -181,6 +172,16 @@
       <pos>0.526 0.16</pos>
       <size>0.003 0.775</size>
       <size ifHelpPrompts="false">0.003 0.84</size>
+      <zIndex>11</zIndex>
+    </image>
+
+    <image name="fondgauche" extra="true">
+      <color>C0C0C0</color>
+	<path>./media/fondgauche/${system.theme}.png</path>
+      <origin>0 0</origin>
+      <pos>0.150 0.11</pos>
+      <size>0.350 0.836</size>
+      <size ifHelpPrompts="false">0.003 0.84</size>
       <zIndex>14</zIndex>
     </image>
     <textlist name="gamelist">
@@ -189,19 +190,20 @@
       <selectorColor>10357a</selectorColor>
       <selectedColor>00000000</selectedColor>
       <forceUppercase>0</forceUppercase>
-      <pos>0.170 0.11</pos>
-      <size>0.294 0.73</size>
+      <pos>0.201 0.10</pos>
+      <size>0.178 0.2515</size>
       <alignment>left</alignment>
       <horizontalMargin>0.00</horizontalMargin>
       <fontPath>./media/images/Cabin-Regular.ttf</fontPath>
-      <fontSize>0.028</fontSize>
+      <fontSize>0.024</fontSize>
         <scrollSound>./variant/scroll/${x.scroll.game.sound}.wav</scrollSound>
       <scrollbarColor>96969620</scrollbarColor>
       <scrollbarCorner>0.49</scrollbarCorner>
       <scrollbarSize>0.0065</scrollbarSize>
       <scrollbarAlignment>outerright</scrollbarAlignment>
       <lines>17</lines>
-      <horizontalMargin>0.005</horizontalMargin>      
+      <horizontalMargin>0.005</horizontalMargin>
+      <zIndex>205</zIndex>      
     </textlist>
     <!-- 
     <text name="md_genre, md_developer, md_publisher, md_lastplayed, md_releasedate, md_players, md_lbl_developer, md_lbl_publisher, md_lbl_lastplayed, md_lbl_playcount, md_lbl_players, md_lbl_releasedate">
@@ -228,14 +230,14 @@
 
     <image name="md_flag">
       <origin>0 0.5</origin>
-      <pos>0.75 0.668</pos>
+      <pos>0.75 0.1284</pos>
       <maxSize>0.02 0.05</maxSize>
       <linearSmooth>true</linearSmooth>
       <zIndex>150</zIndex>
     </image>
     <text name="md_developer">
       <color>969696</color>
-      <pos>0.71 0.694</pos>
+      <pos>0.71 0.146</pos>
       <size>0.30 0.05</size>
       <alignment>left</alignment>
       <fontSize>0.025</fontSize>
@@ -243,14 +245,14 @@
     </text>
 
     <text name="md_lbl_players">
-      <pos>0.54 0.694</pos>
+      <pos>0.67 0.21</pos>
       <pos verticalScreen="true">0.85 0.645</pos>
       <size>0.09 0</size>
       <zIndex>150</zIndex>
     </text>
     <text name="md_players">
       <color>969696</color>
-      <pos>0.585 0.694</pos>
+      <pos>0.721 0.21</pos>
       <size>0.05 0.033</size>
       <alignment>right</alignment>
       <singleLineScroll>true</singleLineScroll>
@@ -265,31 +267,31 @@
 
     <text name="md_lbl_releasedate">
       <color>969696</color>
-      <pos>0.54 0.655</pos>
+      <pos>0.82 0.21</pos>
       <size>0.2 0</size>
       <zIndex>150</zIndex>
     </text>
 
     <datetime name="md_releasedate">
       <color>969696</color>
-      <pos>0.64 0.655</pos>
+      <pos>0.91 0.21</pos>
       <pos verticalScreen="true">0.7 0.645</pos>
       <size>0 0.033</size>
       <zIndex>150</zIndex>
     </datetime>
 
     <text name="md_description">
-      <pos>0.55 0.77</pos>
-      <size>0.43 0.16</size>
-      <color>C0C0C0</color>
+      <pos>0.130 0.55</pos>
+      <size>0.332 0.12</size>
+      <color>ffffff</color>
       <forceUppercase>0</forceUppercase>
-      <fontSize>0.023</fontSize>
+      <fontSize>0.025</fontSize>
     </text>
 
 <image name="md_cheevos,md_notcheevos">
 <origin>0.5 1</origin>
 <path>./media/images/contest.png</path>
-<pos>0.872 0.680</pos>
+<pos>0.872 0.14</pos>
 <maxSize>0.02 0.03</maxSize>     
 <color>ffffff</color>
 <zIndex>9001</zIndex>
@@ -302,7 +304,7 @@
 
 <image name="md_hiddenExtra" extra="true">
 <origin>0.5 1</origin>
-<pos>0.853 0.680</pos>
+<pos>0.853 0.14</pos>
 <path>./media/images/hidden.png</path>
 <maxSize>0.02 0.03</maxSize>
 <color>ffffffff</color>
@@ -311,7 +313,7 @@
 
 <image name="md_hidden">
 <origin>0.5 1</origin>
-<pos>0.853 0.680</pos>
+<pos>0.853 0.14</pos>
 <path>./media/images/hidden.png</path>
 <maxSize>0.02 0.03</maxSize>
 <color>ffffff</color>
@@ -321,7 +323,7 @@
 <image name="md_savestateExtra" extra="true">
 <origin>0.5 1</origin>
 <path>./media/images/SaveState.png</path>
-<pos>0.829 0.680</pos>
+<pos>0.829 0.14</pos>
 <maxSize>0.02 0.03</maxSize>
 <color>20202099</color>
 <zIndex>9001</zIndex>
@@ -331,7 +333,7 @@
 <image name="md_savestate,md_nosavestate">
 <origin>0.5 1</origin>
 <path>./media/images/SaveState.png</path>
-<pos>0.829 0.680</pos>
+<pos>0.829 0.14</pos>
 <maxSize>0.02 0.03</maxSize>
 <color>dddddd</color>
 <zIndex>9001</zIndex>
@@ -341,7 +343,7 @@
 	
 <image name="md_kidgame"> 
 <origin>0.5 1</origin>
-<pos>0.81 0.679</pos>
+<pos>0.81 0.14</pos>
 <path>./media/images/kid.png</path>
 <maxSize>0.02 0.03</maxSize>
 <color>dddddd</color>
@@ -352,7 +354,7 @@
 
 <image name="md_notkidgame"> 
 <origin>0.5 1</origin>
-<pos>0.81 0.679</pos>
+<pos>0.81 0.14</pos>
 <path>./media/images/kid.png</path>
 <maxSize>0.02 0.03</maxSize>
 <color>dddddd</color>
@@ -363,7 +365,7 @@
 
     <image name="md_manual">
       <path>./media/images/manual.png</path>
-      <pos>0.79 0.668</pos>
+      <pos>0.79 0.13</pos>
       <maxSize>0.02 0.03</maxSize>
       <origin>0.5 0.5</origin>
       <color>ffffff</color>
@@ -371,7 +373,7 @@
     </image>
     <!--
     <image name="md_favorite">
-      <pos>0.88 0.668</pos>
+      <pos>0.88 0.14</pos>
       <maxSize>0.02 0.03</maxSize>      
       <path>./media/images/favorite.png</path>
       <origin>0.5 0.5</origin>
@@ -380,20 +382,24 @@
     </image>-->
 
 		<text name="md_publisher">
-			<pos>0.62 0.739</pos>
+                <pos>0.625 0.046</pos>
+                <rotation>-4</rotation>
 			<size>0.107 0.0222222222222222</size>
+			<zIndex>202</zIndex>
 		</text>
+
 		<image name="publisher_logo" extra="true">
-			<pos>0.553 0.748</pos>
+                        <pos>0.600 0.061</pos>
 			<maxSize>0.02 0.03</maxSize>
 			<path>./media/images/game_info_publisher.png</path>
 			<origin>0.5 0.5</origin>
-			<zIndex>150</zIndex>
+                <rotation>-4</rotation>
+			<zIndex>202</zIndex>
 		</image>
 
     <image name="md_fanart">
-      <pos>0.92 0.740</pos>
-      <maxSize>0.07 0.07</maxSize>
+      <pos>0.080 0.84</pos>
+      <maxSize>0.10 0.4</maxSize>
       <origin>0.5 0.5</origin>
       <color>ffffff</color>
       <zIndex>150</zIndex>
@@ -402,13 +408,13 @@
 			<image name="animcd" extra="true">
 			<path>./media/images/cd01.png</path>
 			<origin>1 0.5</origin>
-			<pos>0.98 0.725</pos>
+			<pos>0.1538 0.80</pos>
 		<maxSize>0.08 0.08</maxSize>
 		                <zIndex>149</zIndex>
 
 		<storyboard>
-        		<animation property="x" from="0.99" begin="0" duration="1800" mode="linear"/>
-        		<animation property="rotation" to="360" begin="0" autoreverse="false" duration="800" repeat="forever" mode="linear"/>
+        		<animation property="x" from="0.228" begin="0" duration="1800" mode="linear"/>
+        		<animation property="rotation" to="302" begin="0" autoreverse="false" duration="800" repeat="forever" mode="linear"/>
         		<animation property="opacity" from="0" to="1" duration="350" mode="linear"/>
 		</storyboard>
 		
