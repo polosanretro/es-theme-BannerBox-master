@@ -48,7 +48,6 @@ Videos:                 https://drive.google.com/drive/folders/1VrykKBljos4Sujrp
 		<gamecarouseldetailsViewName>gamecarousel details</gamecarouseldetailsViewName>
 		<carouselViewName>Carrousel</carouselViewName>
 		<carouselDetailsViewName>Carrousel + Détaillé</carouselDetailsViewName>
-		<carouselDetailsMarqueeViewName>Carrousel + Détails + Logo</carouselDetailsMarqueeViewName>
 		<WallViewName>Papier Peint</WallViewName>
 		<gridDetailsMarqueeViewName>Grille + Détails + Logo</gridDetailsMarqueeViewName>
 		<tilesViewName>Vignettes</tilesViewName>
@@ -103,6 +102,13 @@ Videos:                 https://drive.google.com/drive/folders/1VrykKBljos4Sujrp
    <include subset="scrollSound" name="scroll">./variant/variant/scroll/scroll.xml</include>
 
 
+<!--Glogo-->
+	<subset name="gamelist_logo">
+		<include subset="gamelist_logo" name="logo-Bannieres">./views/gamelist_logo.xml</include>
+		<include subset="gamelist_logo" name="Off"></include>
+	</subset>
+
+
 
 
 <!--Sonores-->
@@ -139,6 +145,7 @@ Videos:                 https://drive.google.com/drive/folders/1VrykKBljos4Sujrp
 	<include>./views/gamecarousel.xml</include>
 	<include>./views/grid.xml</include>
 	<include>./views/gamecarouseldetails.xml</include>
+
 
 
 
@@ -428,7 +435,6 @@ Videos:                 https://drive.google.com/drive/folders/1VrykKBljos4Sujrp
 	<view name="video">
 
 <video name="md_video">
-<path>{random}</path>
 <default>./media/noise.mp4</default>
 <pos>0.2815 0.55</pos>
 <size>0.3958 0.48</size>
