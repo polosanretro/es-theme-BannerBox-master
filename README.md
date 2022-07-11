@@ -8,4 +8,3 @@ Nommez les vidéos par le nom de la plate-forme, par exemple nes.mp4.
 
  ici CINEMATICS:
 
-https://drive.google.com/drive/folders/1VrykKBljos4SujrpB_Tx8HFFglrsMcQw?usp=sharing
